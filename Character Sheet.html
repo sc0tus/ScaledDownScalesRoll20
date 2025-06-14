@@ -29,7 +29,7 @@
 			<div>
 				<input class="sheet-locked" type="hidden" name="attr_Portrait" value="PC0" />
 				<div>
-					<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC0.png" alt="Tales of Xadia" />
+					<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC0.png" alt="Scaled Up Scales" />
 				</div>
 				<input class="sheet-locked" type="hidden" name="attr_Portrait" value="PC0" />
 				<div>
@@ -423,6 +423,10 @@
 						</select>
 							Acrobatics
 						</h2>
+						<div>
+							<span name="attr_AthleticsSpecialty"></span>
+							<textarea class="value" name="attr_AthleticsSpecialty" placeholder="Specialty"></textarea>
+						</div>
 					</div>
 					
 					<input type="hidden" class="sheet-locked" name="attr_Athletics" value="0" />
@@ -448,6 +452,10 @@
 						</select>
 							Athletics
 						</h2>
+						<div>
+							<span name="attr_AthleticsSpecialty"></span>
+							<textarea class="value" name="attr_AthleticsSpecialty" placeholder="Specialty"></textarea>
+						</div>
 					</div>
 					
 					<input type="hidden" class="sheet-locked" name="attr_Heal" value="0" />
@@ -473,6 +481,10 @@
 						</select>
 							Heal
 						</h2>
+						<div>
+							<span name="attr_HealSpecialty"></span>
+							<textarea class="value" name="attr_HealSpecialty" placeholder="Specialty"></textarea>
+						</div>
 					</div>
 					
 					<input type="hidden" class="sheet-locked" name="attr_Arcana" value="0" />
@@ -498,6 +510,10 @@
 						</select>
 							Arcana
 						</h2>
+						<div>
+							<span name="attr_ArcaneSpecialty"></span>
+							<textarea class="value" name="attr_ArcaneSpecialty" placeholder="Specialty"></textarea>
+						</div>
 					</div>
 					
 					<input type="hidden" class="sheet-locked" name="attr_Bluff" value="0" />
@@ -521,6 +537,10 @@
 						</select>
 							Bluff
 						</h2>
+						<div>
+							<span name="attr_BluffSpecialty"></span>
+							<textarea class="value" name="attr_BluffSpecialty" placeholder="Specialty"></textarea>
+						</div>
 					</div>
 					
 					<input type="hidden" class="sheet-locked" name="attr_Cooking" value="0" />
@@ -1183,18 +1203,45 @@
 					<div class="sheet-PC6">
 						<div class="sheet-distinction">
 							<h2>Race - Human <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div class="sheet-trigger">
+								<strong>Versatile: </strong> Gain an extra level 1 Class Attack Power. <strong>Language:</strong> Draconic.
+							</div>
 						</div>
 						<div class="sheet-distinction">
 							<h2>Role - Striker <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div class="sheet-trigger">
-								<strong>Graceful Warrior: </strong> Spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to add both your <strong>Dexterity</strong> and <strong>Strength</strong> dice to your dice pool in a test, contest, or challenge that deals with battle, instead of just one attribute.
+								<strong>Draconic Power: </strong> Spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> or an Opportunity to add both your <strong>Charisma</strong> and <strong>Strength</strong> dice to your dice pool in a test, contest, or challenge that deals with battle, instead of just one attribute.
 							</div>
 						</div>
 						<div class="sheet-distinction">
 							<h2>Class - Sorceror <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div>
 								<div class="sheet-trigger">
-									<strong>Resolute:</strong> Spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" />  to add one of your stress dice to a test, contest, or challenge. Step down that stress die afterwards.
+									<strong>Dragon Soul Cold:</strong> When you use your Sorceror Distinction to defend against cold attacks, step down stress damage by one or spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" />  to eliminate the current damage.
+								</div>
+							</div>
+						</div>
+						<div class="sheet-distinction">
+							<h2>Background - Merchant Prince <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div>
+								<div class="sheet-trigger">
+									<strong>Language:</strong> Netherese. Add Insight. When you use your Merchant Prince Distinction on an Insight Skill roll, step up your Insight die.
+								</div>
+							</div>
+						</div>
+						<div class="sheet-distinction">
+							<h2>Background - Tarmalune <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div>
+								<div class="sheet-trigger">
+									<strong>Trader's Diplomacy:</strong> When you spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to take an extra action, gain +1 Speed and step up your Diplomacy Skill Die by one until the end of your turn.
+								</div>
+							</div>
+						</div>
+						<div class="sheet-distinction">
+							<h2>Background - Calimshan <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div>
+								<div class="sheet-trigger">
+									<strong>Face of Calim:</strong> When you use your Calimshan Distinction to defend against fire attacks, step down stress damage by one or spend an Opportunity to eliminate the current damage.
 								</div>
 							</div>
 						</div>
@@ -1357,6 +1404,92 @@
 						</div>
 					</div>
 				</div>
+				<h1>Feats</h1>
+				<input class="locked" type="hidden" name="attr_Portrait" value="PC0" />
+				<div>
+					<div class="sheet-PC0 sheet-distinction">
+						<span name="attr_Asset1"></span>
+						<input class="sheet-traitname" type="text" name="attr_Asset1" placeholder="Type here"> <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" />
+						<div class="sheet-trigger">
+							<span name="attr_Asset1Description"></span>
+							<textarea name="attr_Asset1Description" rows="8" placeholder="Type here"></textarea>
+						</div>
+					</div>
+					<div class="sheet-PC1 sheet-distinction">
+						<h2>Sun Magic Spells <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<ul class="sheet-trigger">
+							<li>Fulmen Ignem (Bolt of Fire)</li>
+							<li>Circulus Luminis (Ring of Light)</li>
+							<li>Verum Animo (Sense Truth of the Heart)</li>
+						</ul>
+					</div>
+					<div class="sheet-PC2 sheet-distinction">
+						<h2>Sunforge Blade  <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">This blade glows with heat. Thankfully it comes with a magical protective sheath.</p>
+					</div>
+					<div class="sheet-PC3 sheet-distinction">
+						<h2>Elven Sword-Staff <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">This staff has blades on either end which can rotate outwards when in use.</p>
+					</div>
+					<div class="sheet-PC4 sheet-distinction">
+						<h2>Light Crossbow <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">A finely-crafted crossbow with a case of quarrels.</p>
+					</div>
+					<div class="sheet-PC5 sheet-distinction">
+						<h2>Chronicles of Elarion <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">A bound collection of stories, tales, and poems from the ancient days of the Human Kingdoms.</p>
+					</div>
+					<div class="sheet-PC6 sheet-distinction">
+						<h2>Linguistics I <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger"><strong>Languages:</strong> Dwarven, Elven and Primordial.</p>
+					</div>
+					<div class="sheet-PC6 sheet-distinction">
+						<h2>Linguistics II <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger"><strong>Languages:</strong> Giant, Deep Speech, and Goblin.</p>
+					</div>
+					<div class="sheet-PC7 sheet-distinction">
+						<h2>Massive Broadsword <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">This ancient Neolandian blade weighs in around 100 pounds.</p>
+					</div>
+					<div class="sheet-PC8 sheet-distinction">
+						<h2>Beetle Brooch <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">An opal charm that resembles an ancient beetle from a bygone era, imbued with Moon magic.</p>
+					</div>
+					<div class="sheet-PC8 sheet-distinction">
+						<h2>Moon Magic Spells <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
+						<ul class="sheet-trigger">
+							<li>Mystica Arbora (Group Invisibility)</li>
+							<li>Luceat Candorem (Dazzling Lights)</li>
+						</ul>
+					</div>
+					<div class="sheet-PC9 sheet-distinction">
+						<h2>Long Dagger <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">A dagger as long as Easgann’s forearm that can parry any blade.</p>
+					</div>
+					<div class="sheet-PC10 sheet-distinction">
+						<h2>Glass Bird Artifact <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">Figurine of an extinct Xadian dove, imbued with Sky magic.</p>
+					</div>
+					<div class="sheet-PC10 sheet-distinction">
+						<h2>Sky Magic Spells <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<ul class="sheet-trigger">
+							<li>Aspiro (Forceful Gust)</li>
+							<li>Alis Secreto (Long Distance Whisper)</li>
+						</ul>
+					</div>
+					<div class="sheet-PC11 sheet-distinction">
+						<h2>Dark Magic Spells <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<ul class="sheet-trigger">
+							<li>Semalf Gnippiks Gnipael (Dancing Flames)</li>
+							<li>Cigam Rouy Laever (Reveal)</li>
+							<li>Eciov Eht Laets (Silence)</li>
+						</ul>
+					</div>
+					<div class="sheet-PC12 sheet-distinction">
+						<h2>Heavy Bow <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+						<p class="sheet-trigger">A military-grade bow that fires spear-like arrows through dense underbrush. </p>
+					</div>
+				</div>
 				<h1>Assets</h1>
 				<input class="locked" type="hidden" name="attr_Portrait" value="PC0" />
 				<div>
@@ -1447,8 +1580,9 @@
 					</div>
 				</div>
 		</div>
+		
 		<div class="sheet-cols1">
-			<h1>Stress</h1>
+			<h1>Physical Stress</h1>
 			<div class="sheet-cols2">
 				<input type="hidden" class="sheet-locked" name="attr_BleedingStress" value="2" />
 				<div class="sheet-stress">
@@ -1464,6 +1598,7 @@
 					</span>
 					<select name="attr_BleedingStress">
 						<option value="2">no slashing damage</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1487,10 +1622,11 @@
 					</span>
 					<select name="attr_PuncturedStress">
 						<option value="2">Straight to Punctured</option>
-						<option value="6"></option>
-						<option value="8"></option>
-						<option value="10"></option>
-						<option value="12"></option>
+						<option value="4">Piercing</option>
+						<option value="6">damage</option>
+						<option value="8">produces</option>
+						<option value="10">no stress</option>
+						<option value="12">just Trauma</option>
 						<option value="14">Stressed out - Punctured</option>
 					</select>
 					Punctured</h2>
@@ -1510,6 +1646,7 @@
 					</span>
 					<select name="attr_StaggeredStress">
 						<option value="2">unbludgeoned</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1533,6 +1670,7 @@
 					</span>
 					<select name="attr_EnvenomedStress">
 						<option value="2">no poison damage</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1556,6 +1694,7 @@
 					</span>
 					<select name="attr_DissolvingStress">
 						<option value="2">no acid damage</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1579,6 +1718,7 @@
 					</span>
 					<select name="attr_MarbledStress">
 						<option value="2">no earth damage</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1590,7 +1730,7 @@
 			</div>
 		</div>
 		<div class="sheet-cols1">
-			<h1>Trauma</h1>
+			<h1>Physical Trauma</h1>
 			<div class="sheet-cols2">
 
 				<input type="hidden" class="sheet-locked" name="attr_BloodiedTrauma" value="2" />
@@ -1607,6 +1747,7 @@
 					</span>
 					<select name="attr_BloodiedTrauma">
 						<option value="2">no slashing trauma</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1630,6 +1771,7 @@
 					</span>
 					<select name="attr_PuncturedTrauma">
 						<option value="2">not punctured</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1653,6 +1795,7 @@
 					</span>
 					<select name="attr_StunnedTrauma">
 						<option value="2">no bludgeoning trauma</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1676,6 +1819,7 @@
 					</span>
 					<select name="attr_PoisonedTrauma">
 						<option value="2">no poison trauma</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1699,6 +1843,7 @@
 					</span>
 					<select name="attr_DisfiguredTrauma">
 						<option value="2">no acid trauma</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1722,6 +1867,7 @@
 					</span>
 					<select name="attr_PetrifiedTrauma">
 						<option value="2">no earth trauma</option>
+						<option value="4">d4</option>
 						<option value="6">d6</option>
 						<option value="8">d8</option>
 						<option value="10">d10</option>
@@ -1735,9 +1881,11 @@
 		
 		<div>
 			<p class="legal">&nbsp;</p>
-			<p class="legal">Tales of Xadia: The Dragon Prince Roleplaying Game is published by Fandom Inc.</p>
-			<p class="legal">Tales of Xadia: The Dragon Prince Roleplaying Game uses the Cortex system. The Cortex system and the Fandom logos are © 2020 Fandom Inc. All rights reserved. Reference to other copyrighted material in no way constitutes a challenge to the respective copyright holders of that material.</p>
-			<p class="legal">The Dragon Prince and all associated characters and elements are © 2020 Wonderstorm, Inc. and used under license by Fandom Inc. All rights reserved.</p>
+			<p class="legal">Scaled Up Scales: The Cortexy Roleplaying Game is published by the FaerieMUD Consortium.</p>
+			<p class="legal">Scaled Up Scales: The Cortexy Roleplaying Game uses the Cortex system. The Cortex system and the Fandom logos are © 2020 Fandom Inc. All rights reserved. Reference to other copyrighted material in no way constitutes a challenge to the respective copyright holders of that material.</p>
+			<p class="legal">The Dragon Prince and all associated characters and elements are © 2020 Wonderstorm, Inc. and probably not used (but if they were, it would be under license by Fandom Inc). All rights reserved.</p>
+			<p class="legal">Scaled Up Scales and all associated characters and elements are © 2025 The FaerieMUD Consortion and used under license by The FaerieMUD Consortium. All rights reserved.</p>
+			<p class="legal">All other copyrighted materials are the property of their respective owners.</p>
 			<p class="legal">Artwork and graphics © and ™ Wonderstorm, Inc. All rights reserved.</p>
 		</div>
 	</div>
@@ -2134,6 +2282,11 @@
 			{{/rollTotal() Asset 12}}
 
 <!-- Stress -->
+			{{#rollTotal() TargetStress 4}}
+				<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d4-blank-280x280{{#rollWasFumble() Stress4}}-hitch{{/rollWasFumble() Stress4}}.png);">
+					{{Stress4}}
+				</div>
+			{{/rollTotal() TargetStress 4}}
 			{{#rollTotal() TargetStress 6}}
 				<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Stress6}}-hitch{{/rollWasFumble() Stress6}}.png);">
 					{{Stress6}}
@@ -2160,6 +2313,6 @@
 	
 	
 <!--
-&{template:Cortex} {{name=@{Name}}} {{portrait=@{Portrait}}} {{Catalyst_dice_size=@{Catalyst}}} {{Catalyst=[[1d@{Catalyst}]]}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{How are you attempting this action?|Dexterity,2|Constitution,3|Charisma,4|Intelligence,5|Wisdom,6|Strength,7|Catalyst,1}]]}} {{Devotion_dice_size=@{Devotion}}} {{Devotion=[[1d@{Devotion}]]}} {{Liberty_dice_size=@{Liberty}}} {{Liberty=[[1d@{Liberty}]]}} {{Glory_dice_size=@{Glory}}} {{Glory=[[1d@{Glory}]]}} {{Mastery_dice_size=@{Mastery}}} {{Mastery=[[1d@{Mastery}]]}} {{Justice_dice_size=@{Justice}}} {{Justice=[[1d@{Justice}]]}} {{Truth_dice_size=@{Truth}}} {{Truth=[[1d@{Truth}]]}} {{Value=[[0d0 + ?{What's driving your motivation?|Devotion,1|Liberty,2|Glory,3|Mastery,4|Justice,5|Truth,6}]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Skill6=[[1d6]]}} {{Skill8=[[1d8]]}} {{Skill10=[[1d10]]}} {{Skill12=[[1d12]]}} {{Skill_Apply=[[0d0 +?{Do you have a relevant skill?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}  {{Stress6=[[1d6]]}} {{Stress8=[[1d8]]}} {{Stress10=[[1d10]]}} {{Stress12=[[1d12]]}} {{TargetStress=[[0d0 +?{Does your target have any stress?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} 
+&{template:Cortex} {{name=@{Name}}} {{portrait=@{Portrait}}} {{Catalyst_dice_size=@{Catalyst}}} {{Catalyst=[[1d@{Catalyst}]]}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{How are you attempting this action?|Dexterity,2|Constitution,3|Charisma,4|Intelligence,5|Wisdom,6|Strength,7|Catalyst,1}]]}} {{Devotion_dice_size=@{Devotion}}} {{Devotion=[[1d@{Devotion}]]}} {{Liberty_dice_size=@{Liberty}}} {{Liberty=[[1d@{Liberty}]]}} {{Glory_dice_size=@{Glory}}} {{Glory=[[1d@{Glory}]]}} {{Mastery_dice_size=@{Mastery}}} {{Mastery=[[1d@{Mastery}]]}} {{Justice_dice_size=@{Justice}}} {{Justice=[[1d@{Justice}]]}} {{Truth_dice_size=@{Truth}}} {{Truth=[[1d@{Truth}]]}} {{Value=[[0d0 + ?{What's driving your motivation?|Devotion,1|Liberty,2|Glory,3|Mastery,4|Justice,5|Truth,6}]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Skill6=[[1d6]]}} {{Skill8=[[1d8]]}} {{Skill10=[[1d10]]}} {{Skill12=[[1d12]]}} {{Skill_Apply=[[0d0 +?{Do you have a relevant skill?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D4,4|D6,6|D8,8|D10,10|D12,12}]]}}  {{Stress4=[[1d4]]}} {{Stress6=[[1d6]]}} {{Stress8=[[1d8]]}} {{Stress10=[[1d10]]}} {{Stress12=[[1d12]]}} {{TargetStress=[[0d0 +?{Does your target have any stress?|No,0|D4,4|D6,6|D8,8|D10,10|D12,12}]]}} 
 -->
 	
