@@ -84,12 +84,6 @@
 						 value="&{template:Cortex} {{name=@{Name}}} {{portrait=@{Portrait}}} {{attempts=?{What are you trying to achieve?}}} {{Catalyst_dice_size=@{Catalyst}}} {{Catalyst=[[1d@{Catalyst}]]}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{How are you attempting this action?|Dexterity,2|Constitution,3|Charisma,4|Intelligence,5|Wisdom,6|Strength,7|Catalyst,1}]]}} {{Devotion_dice_size=@{Devotion}}} {{Devotion=[[1d@{Devotion}]]}} {{Liberty_dice_size=@{Liberty}}} {{Liberty=[[1d@{Liberty}]]}} {{Glory_dice_size=@{Glory}}} {{Glory=[[1d@{Glory}]]}} {{Mastery_dice_size=@{Mastery}}} {{Mastery=[[1d@{Mastery}]]}} {{Justice_dice_size=@{Justice}}} {{Justice=[[1d@{Justice}]]}} {{Truth_dice_size=@{Truth}}} {{Truth=[[1d@{Truth}]]}} {{Value=[[0d0 + ?{What's driving your motivation?|Devotion,1|Liberty,2|Glory,3|Mastery,4|Justice,5|Truth,6}]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Skill6=[[1d6]]}} {{Skill8=[[1d8]]}} {{Skill10=[[1d10]]}} {{Skill12=[[1d12]]}} {{Skill_Apply=[[0d0 +?{Do you have a relevant skill?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}  {{Stress6=[[1d6]]}} {{Stress8=[[1d8]]}} {{Stress10=[[1d10]]}} {{Stress12=[[1d12]]}} {{TargetStress=[[0d0 +?{Does your target have any stress?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} ">Dice Pool Builder</button>
 						<span style="font-size: 11px;">This may not work on the Roll20 Beta Mobile app.</span>
 					</div>
-					<div>
-						<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Chaos Bolt at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_ChaosBolt">Chaos Bolt</button>
-					</div>
-					<div>
-						<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Burning Spray at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_BurningSpray">Burning Spray</button>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1160,27 +1154,54 @@
 					</div>
 					<div class="sheet-PC4">
 						<div class="sheet-distinction">
-							<h2>Del Barian Hinterlander <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<h2>Role: Striker <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div>
 								<div class="sheet-trigger">
-									<strong>Tough:</strong> Spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to convert your <strong>Injured</strong> or <strong>Exhausted</strong> stress into another kind of stress. If you already had stress of that new type, step up that stress.
+									<strong>Dazed and Confused:</strong> Spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to convert your <strong>Confused</strong> or <strong>Dazed</strong> stress into the same kind of stress on the target of an attack which uses your Striker Distinction. If the already had stress of that type, step up that damage instead.
 								</div>
 							</div>
 						</div>
 						<div class="sheet-distinction">
-							<h2>Trailblazing Hunter <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<h2>Class: Warlock <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div class="sheet-trigger">
-								<strong>Keen Eye: </strong> Spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to double your <strong>Constitution</strong> or <strong>Dexterity</strong> die in your dice pool when following a trail, aiming at a distant target, or spotting something far off.
+								<strong>Misty Step: </strong> (Pact Boon) When the target of your Warlock's Curse is Taken Out by an attack using your Warlock distinction you may turn into a silvery mist and reform three squares away as a free action.
 							</div>
 						</div>
 						<div class="sheet-distinction">
-							<h2>Foolhardy Friend <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<h2>Race: Fey're <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div class="sheet-trigger">
+								<strong>Faerie Fire: </strong> When you use your Fey're Distinction, you can turn your <strong>Aflame</strong> stress into nonstressful green flames which dance all over your body and step down your Sneaking Skill for the remainder of the challenge, test, contest or battle.
+							</div>
+						</div>
+						<div class="sheet-distinction">
+							<h2>Background: Fugitive from Gaedren Lamm <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div class="sheet-trigger">
+								</strong>Hungry for Revenge:</strong> When you attack a target which has not yet acted in a combat using your Fey're Distinction, they suffer a stress-like condition which adds a stress die equal to your Sneaking skill for your attack.
+							</div>
 						</div>
 						<div>
 							<div class="sheet-trigger">
 								<strong>Hinder:</strong> Gain a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> when you switch out a distinction’s <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="16" height="16" align="top" /> for a<img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" alt="4" width="16" height="16" align="top" />
 							</div>
 						</div>
+						<h1>At-Will Powers</h1>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Eldritch Strike at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_EldritchStrike">Eldritch Strike</button>
+						</div>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Eyebite at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_Eyebite">Eyebite</button>
+						</div>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Warlock's Curse at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_WarlocksCurse">Warlock's Curse</button>
+						</div>
+					<h1>Encounter Powers</h1>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Explosive Pyre at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_ExplosivePyre">ExplosivePyre</button>
+						</div>
+					<h1>Daily Powers</h1>
+							<div>
+								<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Ice Javelins at targets}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_IceJavelins">Ice Javelins</button>
+							</div>
 					</div>
 					<div class="sheet-PC5">
 						<div class="sheet-distinction">
@@ -1231,15 +1252,7 @@
 							<h2>Background - Merchant Prince <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div>
 								<div class="sheet-trigger">
-									<strong>Language:</strong> Netherese. Add Insight. When you use your Merchant Prince Distinction on an Insight Skill roll, step up your Insight die.
-								</div>
-							</div>
-						</div>
-						<div class="sheet-distinction">
-							<h2>Background - Tarmalune <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
-							<div>
-								<div class="sheet-trigger">
-									<strong>Trader's Diplomacy:</strong> When you spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to take an extra action, gain +1 Speed and step up your Diplomacy Skill Die by one until the end of your turn.
+									<strong>Language:</strong> Netherese. <strong>Insightful Bargainer:</strong> When you use your Merchant Prince Distinction on an Insight Skill roll, step up your Effect die.
 								</div>
 							</div>
 						</div>
@@ -1247,7 +1260,15 @@
 							<h2>Background - Calimshan <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div>
 								<div class="sheet-trigger">
-									<strong>Face of Calim:</strong> When you use your Calimshan Distinction to defend against fire attacks, step down stress damage by one or spend an Opportunity to eliminate the current damage.
+									<strong>Face of Calim:</strong> When you use your Calimshan Distinction to defend against fire attacks, step down stress damage by one or spend an opportunity to eliminate the current damage.
+								</div>
+							</div>
+						</div>
+						<div class="sheet-distinction">
+							<h2>Background - Tarmalune <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div>
+								<div class="sheet-trigger">
+									<strong>Trader's Diplomacy:</strong> When you spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to take an extra action with the Tarmalune Distinction, add +1 to your speed until the end of your turn and step up the Effect Die of any Diplomacy tests you make.
 								</div>
 							</div>
 						</div>
@@ -1258,25 +1279,71 @@
 								</div>
 							</div>
 						</div>
+					<h1>At-Will Powers</h1>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Chaos Bolt at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=[[0d0 + Charisma,4]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_ChaosBolt">Chaos Bolt</button>
+						</div>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Burning Spray at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_BurningSpray">Burning Spray</button>
+						</div>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Dragonfrost at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_DragonFrost">Dragonfrost</button>
+						</div>
+					<h1>Encounter Powers</h1>
+						<div>
+							<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Explosive Pyre at target}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_ExplosivePyre">ExplosivePyre</button>
+						</div>
+					<h1>Daily Powers</h1>
+							<div>
+								<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Cast Ice Javelins at targets}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}}  {{trait_name=Charisma,4}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}"  name="roll_IceJavelins">Ice Javelins</button>
+							</div>
 					</div>
 					<div class="sheet-PC7">
 						<div class="sheet-distinction">
-							<h2>Neolandian Traditionalist <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<h2>Race - Human <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div class="sheet-trigger">
-								<strong>Resourceful: </strong> Activate an opportunity to switch out an existing asset for two assets of one step lower in size. These new assets last until the end of the scene unless you spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to add both your <strong>Dexterity</strong> and <strong>Strength</strong> for each asset to carry over into the next scene.
+								<strong>Versatile: </strong> Gain an extra level 1 Class Attack Power: Emfeebling Strike <strong>Language:</strong> Draconic.
 							</div>
 						</div>
 						<div class="sheet-distinction">
-							<h2>Royal Guard <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<h2>Role - Leader <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div class="sheet-trigger">
+								<strong>Inspiration: </strong> Spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> or an Opportunity to add both your <strong>Charisma</strong> and <strong>Constitution</strong> dice to your dice pool in a test, contest, or challenge that deals with inspiring other, instead of just one attribute.
+							</div>
 						</div>
 						<div class="sheet-distinction">
-							<h2>Blunt Braggart <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<h2>Class - Paladin <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 							<div>
 								<div class="sheet-trigger">
-									<strong>I Can Do Better:</strong> When you fail a roll to beat your opponent in a contest or challenge, spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" /> to reroll your dice pool and try again. You must keep the result of this new roll. If you succeed, step up your effect die by one. If you fail again, step up any stress you take.
+									<strong>Protector:</strong> When you use your Paladin Distinction to defend or heal others, step up effect die by one or spend a <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/plotpoint.png" alt="Plot Point" width="16" height="16" align="top" />  to eliminate both stress and trauma of the current type.
 								</div>
 							</div>
 						</div>
+						<div class="sheet-distinction">
+							<h2>Background - Baldur's Gate <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+							<div>
+								<div class="sheet-trigger">
+									<strong>Language:</strong> ??????. <strong>Streetsmart:</strong> When you use your Baldur's Gate Distinction on a Streetwise Skill roll, step up your Effect die.
+								</div>
+							</div>
+						</div>
+						<div class="sheet-distinction">
+							<div class="sheet-distinction">
+								<h2>Background - Last of the Breed <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+								<div>
+									<div class="sheet-trigger">
+										<strong>Resolute 200:</strong> When you use your Last of the Breed Distinction on an Endurance or Perception Skill Check, step up the Effect Die.
+									</div>
+								</div>
+							</div>
+							<div class="sheet-distinction">
+								<h2>Background - Magic Scholar <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+								<div>
+									<div class="sheet-trigger">
+										<strong>Folio Recitation:</strong> When you use your Magic Scholar Distinction on an Arcana or Knowledge (History) Check, step up the Effect Die.
+									</div>
+								</div>
+							</div>
 						<div class="sheet-distinction">
 							<div>
 								<div class="sheet-trigger">
