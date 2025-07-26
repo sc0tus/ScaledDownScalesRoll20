@@ -961,10 +961,10 @@
 				</h2>
 			</div>
 			
-			<input type="hidden" class="sheet-locked" name="attr_OceanMagic" value="0" />
+			<input type="hidden" class="sheet-locked" name="attr_TemporaryResistance" value="0" />
 			<div class="sheet-skills">
 				<h2>
-				<input type="hidden" class="sheet-locked" name="attr_OceanMagic" value="0" />
+				<input type="hidden" class="sheet-locked" name="attr_TemporaryResistance" value="0" />
 				<span>
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="left" width="25" height="25" alt="d4" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="left" width="25" height="25" alt="d6" />
@@ -972,7 +972,7 @@
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d10-280x280.png" align="left" width="25" height="25" alt="d10" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d12-280x280.png" align="left" width="25" height="25" alt="d12" />
 				</span>
-				<select class="sheet-editDice" name="attr_OceanMagic">
+				<select class="sheet-editDice" name="attr_TemporaryResistance">
 					<option value="2">Select</option>
 					<option value="4">4</option>
 					<option value="6">6</option>
@@ -980,7 +980,7 @@
 					<option value="10">10</option>
 					<option value="12">12</option>
 				</select>
-					Ocean Magic
+					Temporary Resistance
 				</h2>
 			</div>
 			
@@ -1423,7 +1423,7 @@
 					<abbr title="REQUIREMENT: Paladin must have at least one Healing Surge remaining to use this power. SPECIAL: MacDougal can use this power once per day (his Wisdom modifier), but only once per round (no matter how high his modifier goes)."><button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Lay On Hands on adjacent target. EFFECT: The Paladin spends one of his own Healing Surges and eliminates one Stress or Trauma from the target.}}" name="roll_LayOnHands">Lay On Hands (minor)</button></abbr>
 				</div>
 				<div>
-					<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=make a Bolstering Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_BolsteringStrike">Bolstering Strike</button>
+					<abbr title="HIT: Effect die weapon (slashing) damage. And add your Wisdom Die to your Temporary Resistance Skill."><button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=make a Bolstering Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_BolsteringStrike">Bolstering Strike</button></abbr>
 				</div>
 				<div>
 					<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=make a Challenging Strike at target's AC (or Will if bloodied)}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_ChalleningStrike">Challenging Strike</button>
