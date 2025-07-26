@@ -33,20 +33,20 @@
 		</div>
 		<input class="sheet-locked" type="hidden" name="attr_Portrait" value="PC0" />
 		<div>
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC1" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC2" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC3" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC4" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC5" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC6" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC7" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC8" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC9" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC10" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC11" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="PC12" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="Cat1" >
-		    <img class="sheet-portrait portraitpicture" name="attr_character_avatar" alt="Cat2" >
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC1.png" alt="PC1" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC2.png" alt="PC2" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC3.png" alt="PC3" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC4.png" alt="PC4" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC5.png" alt="PC5" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC6.png" alt="PC6" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC7.png" alt="PC7" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC8.png" alt="PC8" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC9.png" alt="PC9" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC10.png" alt="PC10" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC11.png" alt="PC11" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/PC12.png" alt="PC12" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/catalyst1.png" alt="Cat1" />
+			<img class="sheet-portrait" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/catalyst2.png" alt="Cat2" />
 		</div>
 	</div>
 	<div>
@@ -54,15 +54,15 @@
 			
 			<select name="attr_Portrait">
 				<option value="PC0">Select Portrait</option>
-				<option value="PC1">Babukar</option>
-				<option value="PC2">Bineta</option>
-				<option value="PC3">Eljaal</option>
-				<option value="PC4">Winda</option>
+				<option value="PC1">Quincunx</option>
+				<option value="PC2">Andrea Ravn</option>
+				<option value="PC3">Brooke</option>
+				<option value="PC4">Roan</option>
 				<option value="PC5">Vinaya</option>
-				<option value="PC6">Diyan</option>
+				<option value="PC6">Duncan</option>
 				<option value="PC8">Draylenn</option>
 				<option value="PC9">Easgann</option>
-				<option value="PC7">Routhna</option>
+				<option value="PC7">MacDougal</option>
 				<option value="PC10">Pyrda</option>
 				<option value="PC11">Tressal</option>
 				<option value="PC12">Ponmalar</option>
@@ -81,7 +81,7 @@
 			<br />&nbsp;<br />
 			<div>
 				<button class="sheet-blank-roll-button" type="roll" name="roll_DicePool" 
-				 value="&{template:Cortex} {{name=@{Name}}} {{portrait=@{Portrait}}} {{attempts=?{What are you trying to achieve?}}} {{Catalyst_dice_size=@{Catalyst}}} {{Catalyst=[[1d@{Catalyst}]]}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{How are you attempting this action?|Dexterity,2|Constitution,3|Charisma,4|Intelligence,5|Wisdom,6|Strength,7|Catalyst,1}]]}} {{Freedom_dice_size=@{Freedom}}} {{Freedom=[[1d@{Freedom}]]}} {{Rights_dice_size=@{Rights}}} {{Rights=[[1d@{Rights}]]}} {{Law_dice_size=@{Law}}} {{Law=[[1d@{Law}]]}} {{None_dice_size=@{None}}} {{None=[[1d@{None}]]}} {{Good_dice_size=@{Good}}} {{Good=[[1d@{Good}]]}} {{Balance_dice_size=@{Balance}}} {{Balance=[[1d@{Balance}]]}} {{Evil_dice_size=@{Evil}}} {{Evil=[[1d@{Evil}]]}} {{Value=[[0d0 + ?{What's driving your motivation?|Freedom,1|Rights,2|Law,3|None,4|Good,5|Balance,6|Evil,7}]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Skill6=[[1d6]]}} {{Skill8=[[1d8]]}} {{Skill10=[[1d10]]}} {{Skill12=[[1d12]]}} {{Skill_Apply=[[0d0 +?{Do you have a relevant skill?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}  {{Stress6=[[1d6]]}} {{Stress8=[[1d8]]}} {{Stress10=[[1d10]]}} {{Stress12=[[1d12]]}} {{TargetStress=[[0d0 +?{Does your target have any stress?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} ">Dice Pool Builder</button>
+				 value="&{template:Cortex} {{name=@{Name}}} {{portrait=@{Portrait}}} {{attempts=?{What are you trying to achieve?}}} {{Catalyst_dice_size=@{Catalyst}}} {{Catalyst=[[1d@{Catalyst}]]}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{How are you attempting this action?|Dexterity,2|Constitution,3|Charisma,4|Intelligence,5|Wisdom,6|Strength}]]}} {{Freedom_dice_size=@{Freedom}}} {{Freedom=[[1d@{Freedom}]]}} {{Rights_dice_size=@{Rights}}} {{Rights=[[1d@{Rights}]]}} {{Law_dice_size=@{Law}}} {{Law=[[1d@{Law}]]}} {{None_dice_size=@{None}}} {{None=[[0d@{None}]]}} {{Good_dice_size=@{Good}}} {{Good=[[1d@{Good}]]}} {{Balance_dice_size=@{Balance}}} {{Balance=[[1d@{Balance}]]}} {{Evil_dice_size=@{Evil}}} {{Evil=[[1d@{Evil}]]}} {{Value=[[0d0 + ?{What's driving your motivation?|Freedom,1|Rights,2|Law,3|None,4|Good,5|Balance,6|Evil,7}]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Skill6=[[1d6]]}} {{Skill8=[[1d8]]}} {{Skill10=[[1d10]]}} {{Skill12=[[1d12]]}} {{Skill_Apply=[[0d0 +?{Do you have a relevant skill?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}  {{Stress6=[[1d6]]}} {{Stress8=[[1d8]]}} {{Stress10=[[1d10]]}} {{Stress12=[[1d12]]}} {{TargetStress=[[0d0 +?{Does your target have any stress?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} ">Dice Pool Builder</button>
 				<span style="font-size: 11px;">This may not work on the Roll20 Beta Mobile app.</span>
 			</div>
 		</div>
@@ -1418,6 +1418,9 @@
 				</div>
 				<div>
 					<abbr title="MARK TARGET: Until used on another target. Or until Paladin fails to engage the target. ENGAGE: Attack the target or end turn next to target. ON PALADIN'S TURN: Paladin must engage target or place a Divine Challenge on another target. FAILURE TO DO SO: Mark ends and Paladin cannot make another Divine Challenge on their next turn. SPECIAL: Doesn't rely on Intelligence or language ability of target. Cannot be placed on a Creature which is already target of another Divine Challenge."><button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=put his Divine Challenge on target. As long as he engages the target, the effect is: Any attack the target makes that does not include MacDougal suffers a stress-like 1d6 penalty (the defender gets an extra 1d6 to the defense roll). In addition, the first time it makes an attack that doesn't include MacDougal before the end of his next turn, it takes radiant damage (Dazzled Stress) equal to the effect die on its attack roll.}}" name="roll_DivineChallenge">Divine Challenge (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="REQUIREMENT: Paladin must have at least one Healing Surge remaining to use this power. SPECIAL: MacDougal can use this power once per day (his Wisdom modifier), but only once per round (no matter how high his modifier goes)."><button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=Lay On Hands on adjacent target. EFFECT: The Paladin spends one of his own Healing Surges and eliminates one Stress or Trauma from the target.}}" name="roll_LayOnHands">Lay On Hands (minor)</button></abbr>
 				</div>
 				<div>
 					<button type="roll" value="&{template:Cortex} {{portrait=@{Portrait}}} {{name=@{character_name}}} {{attempts=make a Bolstering Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_BolsteringStrike">Bolstering Strike</button>
