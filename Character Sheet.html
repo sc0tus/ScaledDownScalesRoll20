@@ -81,8 +81,22 @@
 			<br />&nbsp;<br />
 			<div>
 				<button class="sheet-blank-roll-button" type="roll" name="roll_DicePool" 
-				 value="&{template:Cortex} {{name=@{Name}}} {{portrait=@{ctoken}}} {{attempts=?{What are you trying to achieve?}}} {{Catalyst_dice_size=@{Catalyst}}} {{Catalyst=[[1d@{Catalyst}]]}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{How are you attempting this action?|Dexterity,2|Constitution,3|Charisma,4|Intelligence,5|Wisdom,6|Strength}]]}} {{Freedom_dice_size=@{Freedom}}} {{Freedom=[[1d@{Freedom}]]}} {{Rights_dice_size=@{Rights}}} {{Rights=[[1d@{Rights}]]}} {{Law_dice_size=@{Law}}} {{Law=[[1d@{Law}]]}} {{None_dice_size=@{None}}} {{None=[[0d@{None}]]}} {{Good_dice_size=@{Good}}} {{Good=[[1d@{Good}]]}} {{Balance_dice_size=@{Balance}}} {{Balance=[[1d@{Balance}]]}} {{Evil_dice_size=@{Evil}}} {{Evil=[[1d@{Evil}]]}} {{Value=[[0d0 + ?{What's driving your motivation?|Freedom,1|Rights,2|Law,3|None,4|Good,5|Balance,6|Evil,7}]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Skill6=[[1d6]]}} {{Skill8=[[1d8]]}} {{Skill10=[[1d10]]}} {{Skill12=[[1d12]]}} {{Skill_Apply=[[0d0 +?{Do you have a relevant skill?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}  {{Stress6=[[1d6]]}} {{Stress8=[[1d8]]}} {{Stress10=[[1d10]]}} {{Stress12=[[1d12]]}} {{TargetStress=[[0d0 +?{Does your target have any stress?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} ">Dice Pool Builder</button>
+				 value="&{template:Cortex} {{name=@{Name}}} {{portrait=@{ctoken}}} {{attempts=?{What are you trying to achieve?}}} {{Catalyst_dice_size=@{Catalyst}}} {{Catalyst=[[1d@{Catalyst}]]}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{How are you attempting this action?|Dexterity,2|Constitution,3|Charisma,4|Intelligence,5|Wisdom,6|Strength}]]}} {{Freedom_dice_size=@{Freedom}}} {{Freedom=[[1d@{Freedom}]]}} {{Rights_dice_size=@{Rights}}} {{Rights=[[1d@{Rights}]]}} {{Law_dice_size=@{Law}}} {{Law=[[1d@{Law}]]}} {{None_dice_size=@{None}}} {{None=[[0d@{None}]]}} {{Good_dice_size=@{Good}}} {{Good=[[1d@{Good}]]}} {{Balance_dice_size=@{Balance}}} {{Balance=[[1d@{Balance}]]}} {{Evil_dice_size=@{Evil}}} {{Evil=[[1d@{Evil}]]}} {{Value=[[0d0 + ?{What's driving your motivation?|Freedom,1|Rights,2|Law,3|None,4|Good,5|Balance,6|Evil,7}]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Skill6=[[1d6]]}} {{Skill8=[[1d8]]}} {{Skill10=[[1d10]]}} {{Skill12=[[1d12]]}} {{Skill_Apply=[[0d0 +?{Do you have a relevant skill?|No,0|D4,4|D6,6|D8,8|D10,10|D12,12}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}  {{Stress6=[[1d6]]}} {{Stress8=[[1d8]]}} {{Stress10=[[1d10]]}} {{Stress12=[[1d12]]}} {{TargetStress=[[0d0 +?{Does your target have any stress?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} ">Dice Pool Builder</button>
 				<span style="font-size: 11px;">This may not work on the Roll20 Beta Mobile app.</span>
+			</div>
+			<h1>Session Records:</h1>
+			<div class="sheet-asset">
+				<div class="sheet-distinction">
+					<span name="attr_SessionRecordsList"></span>
+					<textarea name="attr_SessionRecordsList" rows="8" placeholder="Type here"></textarea>
+				</div>
+			</div>
+			<h2>Used Session Records:</h2>
+			<div class="sheet-asset">
+				<div class="sheet-distinction">
+					<span name="attr_UsedRecordsList"></span>
+					<textarea name="attr_UsedRecordsList" rows="8" placeholder="Type here"></textarea>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -244,7 +258,20 @@
 
 <div class="sheet-cols2">
 	<div class="sheet-cols1">
-		<h1>Values</h1>
+		<!-- AC -->
+			<button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Armor Class}} {{Armor6=[[1d6]]}} {{Armor8=[[1d8]]}} {{Armor10=[[1d10]]}} {{Armor12=[[1d12]]}} {{Armor=[[0d0 +?{What level of armor do you have?|None,0|D6,6|D8,8|D10,10|D12,12}]]}} {{MagicArmor6=[[1d6]]}} {{MagicArmor8=[[1d8]]}} {{MagicArmor10=[[1d10]]}} {{MagicArmor12=[[1d12]]}} {{MagicArmor=[[0d0 +?{Do you have a Magic Armor Bonus?|No,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Size4=[[1d4]]}} {{Size6=[[1d6]]}} {{Size8=[[1d8]]}} {{Size10=[[1d10]]}} {{Size12=[[1d12]]}} {{Size=[[0d0 +?{What is your characters size?|Tiny,0|Small,4|Medium,6|Large,8|Huge,10|Gargantuan,12}]]}}" name="roll_AC">Armor Class</button>
+
+			<!-- Will -->
+			<button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Will Defense}}  {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{Which attribute do you want to use?|Charisma,4|Wisdom,6}]]}} {{Neck6=[[1d6]]}} {{Neck8=[[1d8]]}} {{Neck10=[[1d10]]}} {{Neck12=[[1d12]]}} {{Neck=[[0d0 +?{Do you have a Neck Enhancement?|None,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Race6=[[1d6]]}} {{Race8=[[1d8]]}} {{Race=[[0d0 +?{What is your Race?|Fay're,6|Human,8}]]}}" name="roll_Will">Will Defense</button>
+
+			<!-- Fortitude -->
+			<button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Fortitude Defense}}  {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{Which attribute do you want to use?|Constitution,3|Strength,7}]]}} {{Neck6=[[1d6]]}} {{Neck8=[[1d8]]}} {{Neck10=[[1d10]]}} {{Neck12=[[1d12]]}} {{Neck=[[0d0 +?{Do you have a Neck Enhancement?|None,0|D6,6|D8,8|D10,10|D12,12}]]}} {{Size4=[[1d4]]}} {{Size6=[[1d6]]}} {{Size8=[[1d8]]}} {{Size10=[[1d10]]}} {{Size12=[[1d12]]}} {{Size=[[0d0 +?{What is your characters size?|Tiny,0|Small,4|Medium,6|Large,8|Huge,10|Gargantuan,12}]]}}" name="roll_Fortitude">Fortitude Defense</button>
+
+			<!-- Reflex -->
+			<button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Reflex Defense}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + ?{Which attribute do you want to use?|Dexterity,2|Intelligence,5}]]}} {{Neck6=[[1d6]]}} {{Neck8=[[1d8]]}} {{Neck10=[[1d10]]}} {{Neck12=[[1d12]]}} {{Neck=[[0d0 +?{Do you have a Neck Enhancement?|None,0|D6,6|D8,8|D10,10|D12,12}]]}} {{ArmorAdjustment4=[[1d4]]}} {{ArmorAdjustment6=[[1d6]]}} {{ArmorAdjustment8=[[1d8]]}} {{ArmorAdjustment10=[[1d10]]}} {{ArmorAdjustment12=[[1d12]]}} {{ArmorAdjustment=[[0d0 +?{What kind of armor do you have?|Plate,4|Scale or Chain,6|Hide and Leather,8|Cloth,10}]]}}" name="roll_Reflex">Reflex Defense</button>
+
+
+		<h1>Values</h1> <h2>from Alignment</h2>
 		<div class="sheet-cols2">
 			<div class="sheet-values">
 				<h2>
@@ -591,6 +618,10 @@
 				</select>
 					Cooking
 				</h2>
+				<div>
+					<span name="attr_CookingSpecialty"></span>
+					<textarea class="value" name="attr_CookingSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Crafting" value="0" />
@@ -614,6 +645,10 @@
 				</select>
 					Crafting
 				</h2>
+				<div>
+					<span name="attr_CraftingSpecialty"></span>
+					<textarea class="value" name="attr_CraftingSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Diplomacy" value="0" />
@@ -637,6 +672,10 @@
 				</select>
 					Diplomacy
 				</h2>
+				<div>
+					<span name="attr_DiplomacySpecialty"></span>
+					<textarea class="value" name="attr_DiplomacySpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Knowledge" value="0" />
@@ -660,6 +699,10 @@
 				</select>
 					Knowledge
 				</h2>
+				<div>
+					<span name="attr_KnowledgeSpecialty"></span>
+					<textarea class="value" name="attr_KnowledgeSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Endurance" value="0" />
@@ -683,6 +726,10 @@
 				</select>
 					Endurance
 				</h2>
+				<div>
+					<span name="attr_EnduranceSpecialty"></span>
+					<textarea class="value" name="attr_EnduranceSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Insight" value="0" />
@@ -706,6 +753,10 @@
 				</select>
 					Insight
 				</h2>
+				<div>
+					<span name="attr_InsightSpecialty"></span>
+					<textarea class="value" name="attr_InsightSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Performance" value="0" />
@@ -729,6 +780,10 @@
 				</select>
 					Performance
 				</h2>
+				<div>
+					<span name="attr_PerformanceSpecialty"></span>
+					<textarea class="value" name="attr_PerformanceSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Sneaking" value="0" />
@@ -752,6 +807,10 @@
 				</select>
 					Sneaking
 				</h2>
+				<div>
+					<span name="attr_SneakingSpecialty"></span>
+					<textarea class="value" name="attr_SneakingSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Perception" value="0" />
@@ -775,6 +834,10 @@
 				</select>
 					Perception
 				</h2>
+				<div>
+					<span name="attr_PerceptionSpecialty"></span>
+					<textarea class="value" name="attr_PerceptionSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Intimidate" value="0" />
@@ -798,6 +861,10 @@
 				</select>
 					Intimidate
 				</h2>
+				<div>
+					<span name="attr_IntimidateSpecialty"></span>
+					<textarea class="value" name="attr_IntimidateSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Investigate" value="0" />
@@ -821,6 +888,10 @@
 				</select>
 					Investigate
 				</h2>
+				<div>
+					<span name="attr_IntimidateSpecialty"></span>
+					<textarea class="value" name="attr_IntimidateSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Swordplay" value="0" />
@@ -844,6 +915,10 @@
 				</select>
 					Swordplay
 				</h2>
+				<div>
+					<span name="attr_SwordplaySpecialty"></span>
+					<textarea class="value" name="attr_SwordplaySpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Survival" value="0" />
@@ -867,6 +942,10 @@
 				</select>
 					Survival
 				</h2>
+				<div>
+					<span name="attr_SurvivalSpecialty"></span>
+					<textarea class="value" name="attr_SurvivalSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_UnarmedCombat" value="0" />
@@ -890,6 +969,10 @@
 				</select>
 					Unarmed Combat
 				</h2>
+				<div>
+					<span name="attr_UnarmedCombatSpecialty"></span>
+					<textarea class="value" name="attr_UnarmedCombatSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_SpearsAndPolearms" value="0" />
@@ -913,6 +996,10 @@
 				</select>
 					Spears and Polearms
 				</h2>
+				<div>
+					<span name="attr_SpearsAndPolearmsSpecialty"></span>
+					<textarea class="value" name="attr_SpearsAndPolearmsSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Thievery" value="0" />
@@ -936,6 +1023,10 @@
 				</select>
 					Thievery
 				</h2>
+				<div>
+					<span name="attr_ThieverySpecialty"></span>
+					<textarea class="value" name="attr_ThieverySpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
 			<input type="hidden" class="sheet-locked" name="attr_Archery" value="0" />
@@ -959,9 +1050,13 @@
 				</select>
 					Archery
 				</h2>
+				<div>
+					<span name="attr_ArcherySpecialty"></span>
+					<textarea class="value" name="attr_ArcherySpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
-			<input type="hidden" class="sheet-locked" name="attr_TemporaryResistance" value="0" />
+			<abbr title="IF YOU TAKE DAMAGE WHEN YOU HAVE TEMPORARY RESISTANCE: Compare the Effect Die of the damage to die of your current Temporary Resistance. IF THE EFFECT DIE IS LARGER: Eliminate the Resistance and apply the damage as usual. IF THE RESISTANCE DIE IS LARGER: Step it down by the number of steps in the Effect Die (ie, one step for a d4, two steps for a d6, etc.). IF THEY ARE EQUAL: Eliminate the Resistance (but do not apply the damage)."><input type="hidden" class="sheet-locked" name="attr_TemporaryResistance" value="0" />
 			<div class="sheet-skills">
 				<h2>
 				<input type="hidden" class="sheet-locked" name="attr_TemporaryResistance" value="0" />
@@ -982,12 +1077,16 @@
 				</select>
 					Temporary Resistance
 				</h2>
-			</div>
+				<div>
+					<span name="attr_TemporaryResistanceSpecialty"></span>
+					<textarea class="value" name="attr_TemporaryResistanceSpecialty" placeholder="Specialty"></textarea>
+				</div>
+			</div></abbr>
 			
-			<input type="hidden" class="sheet-locked" name="attr_SkyMagic" value="0" />
+			<input type="hidden" class="sheet-locked" name="attr_DragonMagic" value="0" />
 			<div class="sheet-skills">
 				<h2>
-				<input type="hidden" class="sheet-locked" name="attr_SkyMagic" value="0" />
+				<input type="hidden" class="sheet-locked" name="attr_DragonMagic" value="0" />
 				<span>
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="left" width="25" height="25" alt="d4" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="left" width="25" height="25" alt="d6" />
@@ -995,7 +1094,7 @@
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d10-280x280.png" align="left" width="25" height="25" alt="d10" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d12-280x280.png" align="left" width="25" height="25" alt="d12" />
 				</span>
-				<select class="sheet-editDice" name="attr_SkyMagic">
+				<select class="sheet-editDice" name="attr_DragonMagic">
 					<option value="2">Select</option>
 					<option value="4">4</option>
 					<option value="6">6</option>
@@ -1003,14 +1102,18 @@
 					<option value="10">10</option>
 					<option value="12">12</option>
 				</select>
-					Sky Magic
+					Dragon Magic
 				</h2>
+				<div>
+					<span name="attr_DragonMagicSpecialty"></span>
+					<textarea class="value" name="attr_DragonMagicSpecialty" placeholder="Specialty"></textarea>
+				</div>
 			</div>
 			
-			<input type="hidden" class="sheet-locked" name="attr_StarMagic" value="0" />
+			<input type="hidden" class="sheet-locked" name="attr_ConditionI" value="0" />
 			<div class="sheet-skills">
 				<h2>
-				<input type="hidden" class="sheet-locked" name="attr_StarMagic" value="0" />
+				<input type="hidden" class="sheet-locked" name="attr_ConditionI" value="0" />
 				<span>
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="left" width="25" height="25" alt="d4" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="left" width="25" height="25" alt="d6" />
@@ -1018,7 +1121,7 @@
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d10-280x280.png" align="left" width="25" height="25" alt="d10" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d12-280x280.png" align="left" width="25" height="25" alt="d12" />
 				</span>
-				<select class="sheet-editDice" name="attr_StarMagic">
+				<select class="sheet-editDice" name="attr_ConditionI">
 					<option value="2">Select</option>
 					<option value="4">4</option>
 					<option value="6">6</option>
@@ -1026,14 +1129,18 @@
 					<option value="10">10</option>
 					<option value="12">12</option>
 				</select>
-					Star Magic
+					Condition I
 				</h2>
+				<div>
+					<span name="attr_ConditionISpecialty"></span>
+					<textarea class="value" name="attr_ConditionISpecialty" placeholder="Condition"></textarea>
+				</div>
 			</div>
 			
-			<input type="hidden" class="sheet-locked" name="attr_SunMagic" value="0" />
+			<input type="hidden" class="sheet-locked" name="attr_ConditionII" value="0" />
 			<div class="sheet-skills">
 				<h2>
-				<input type="hidden" class="sheet-locked" name="attr_SunMagic" value="0" />
+				<input type="hidden" class="sheet-locked" name="attr_ConditionII" value="0" />
 				<span>
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="left" width="25" height="25" alt="d4" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="left" width="25" height="25" alt="d6" />
@@ -1041,7 +1148,7 @@
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d10-280x280.png" align="left" width="25" height="25" alt="d10" />
 					<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d12-280x280.png" align="left" width="25" height="25" alt="d12" />
 				</span>
-				<select class="sheet-editDice" name="attr_SunMagic">
+				<select class="sheet-editDice" name="attr_ConditionII">
 					<option value="2">Select</option>
 					<option value="4">4</option>
 					<option value="6">6</option>
@@ -1049,8 +1156,12 @@
 					<option value="10">10</option>
 					<option value="12">12</option>
 				</select>
-					Sun Magic
+					Condition II
 				</h2>
+				<div>
+					<span name="attr_ConditionIISpecialty"></span>
+					<textarea class="value" name="attr_ConditionIISpecialty" placeholder="Condition"></textarea>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -1195,22 +1306,22 @@
 					</div>
 				</div>
 				<div class="sheet-distinction">
-					<h2>Race: Fey're <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+					<h2>Race: Fey'ri <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 					<div class="sheet-trigger">
-						<strong>Faerie Fire: </strong> When you use your Fey're Distinction, you can turn your <strong>Aflame</strong> stress into nonstressful green flames which dance all over your body and step down your Sneaking Skill for the remainder of the challenge, test, contest or battle.
+						<strong>Faerie Fire: </strong> When you use your Fey'ri Distinction, you can turn your <strong>Aflame</strong> stress into nonstressful green flames which dance all over your body and step down your Sneaking Skill for the remainder of the challenge, test, contest or battle.
 					</div>
 				</div>
 				<div class="sheet-distinction">
 					<h2>Background: Fugitive from Gaedren Lamm <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 					<div class="sheet-trigger">
-						</strong>Hungry for Revenge:</strong> When you attack a target which has not yet acted in a combat using your Fey're Distinction, they suffer a stress-like condition which adds a stress die equal to your Sneaking skill for your attack.
+						</strong>Hungry for Revenge:</strong> When you attack a target which has not yet acted in a combat using your Fugitive from Gaedren Lamm Distinction, they suffer a stress-like condition which adds a stress die equal to your Sneaking skill for your attack.
 					</div>
 				</div>
 				<div class="sheet-distinction">
 					<h2>Background - Baldur's Gate <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
 					<div>
 						<div class="sheet-trigger">
-							<strong>Language:</strong> ??????. <strong>Streetsmart:</strong> When you use your Baldur's Gate Distinction on a Knowledge or Survival Skill roll, gain the Streetwise Specialty.
+							<strong>Language:</strong> Elven. <strong>Streetsmart:</strong> When you use your Baldur's Gate Distinction on a Knowledge or Survival Skill roll, gain the Streetwise Specialty.
 						</div>
 					</div>
 				</div>
@@ -1237,25 +1348,50 @@
 				</div>
 			<h1>At-Will Powers</h1>
 				<div>
-					<abbr title="HIT: Effect die slashing damage."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make an Eldritch Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_EldritchStrike">Eldritch Strike</button></abbr>
+					<abbr title="BASIC: Melee (but see Eldritch Strike). HIT: Effect die weapon (slashing) damage."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make a Dagger Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_DaggerStrike">Dagger</button></abbr>
+				</div>
+				<div>
+					<abbr title="BASIC: Melee. HIT: Effect die weapon (slashing) damage. May also use Constitution Die (but why would you?)."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make an Eldritch Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_EldritchStrike">Eldritch Strike</button></abbr>
 				</div>
 				<div>
 					<abbr title="HIT: Effect die psychic damage, and you are invisible to target until the end of your next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Eyebite at target's Will}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_Eyebite">Eyebite</button></abbr>
-					<abbr title="Prime Shot: Can only be used if no ally is closer to the target. HIT: Effect die psychic damage, and you are invisible to target until the end of your next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Eyebite at target's Will if no allies are closer to target than Roan}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=8}} {{AtWill6=[[1d8]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_Eyebite">Eyebite (w/ Prime Shot)</button></abbr>
+					<abbr title="Prime Shot: Can only be used if no ally is closer to the target. Step up any Asset used. HIT: Effect die psychic damage, and you are invisible to target until the end of your next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Eyebite at target's Will if no allies are closer to target than Roan}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=8}} {{AtWill6=[[1d8]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_Eyebite">Eyebite (w/ Prime Shot)</button></abbr>
 				</div>
 				<div>
 					<abbr title="You can place a Warlock's Curse (d4) on multiple targets over the course of an encounter; each curse requires the use of a Minor Action."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=to put her Warlock's Curse on closest enemy. Succeeding against her choice among the closest enemies, the effect is: The target takes extra damage if Roan hits an accursed target with an attack (step up stress damage). She decides whether to step this up after damage is determined.}}" name="roll_WarlocksCurse">Warlock's Curse (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SECOND WIND: Target gets Second Wind without spending an action. STABILIZE THE DYING: This presumes the target has Trauma past d12. The healer rolls a Heal Skill check vs 3d12. On a success, the Effect Die becomes the new Trauma level. If the Healer also spends a Plot Point, they may instead eliminate one type of Trauma. SAVING THROW: Either, 1) allow the target to make an immediate Saving Throw against a Condition that a Saving Throw can end, or 2) grant a 1d6 bonus to a Saving Throw at the end of the target's next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Heal an adjacent character. HEAL: 1) allow the target to spend their Second Wind; 2) make a Heal Skill check for Stabilize the Dying; or 3) grant a Saving Throw.}}" name="roll_FirstAid">First Aid</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL FIRST AID: For Puncture Trauma and Poison Conditions. Often happens automatically when you remove the thing that punctured them. Roll a Heal Skill Check vs 3dPuncture (where dPuncture is extent of the Trauma). Or roll Heal Skill vs 3dPoison (where dPoison is the extent of the Trauma)."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Heal self or an adjacent character. HEAL: 1) remove arrow or other piercing/poisoning weapon; and 2) make a Heal Skill check vs 3dCondition. SUCCESS FOR PUNCTURE WOUNDS: put 1d4 Bleeding Stress on target and step Puncture Trauma down or spend a Plot Point to put Effect Die Bleeding Stress on target and eliminate Punctured Trauma; SUCCESS FOR POISON: The Effect Die is ignored for such healing and is treated as whatever the Envenomed die was. The healed creature gets Bleeding condition at the same level as the Envenomed Stress and the Poisoned Damage is stepped down by one. Spending a Plot Point will end the Poisoned Trauma AND the Envenomed Stress.}}" name="roll_MakeItBleed">Make It Bleed (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL HEAL: For Stunned Trauma and Staggered/Dazed Stress. Roll a Heal Skill Check vs 3dStress (where dStress is extent of the Stress)."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Clear the cobwebs from her brain: Make a Heal Skill check vs 3dStress (note that this uses Stress even if Stunned Trauma is present). SUCCESS: Eliminate all Stress on self and step Stunned Trauma down (or spend a Plot Point to eliminate Trauma); FAILURE: Step both Dazed/Staggered Stress and Stunned Trauma down by one.}}" name="roll_ShakeItOff">Shake It Off (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL REST: For Exhausted Trauma and Tired Stress. Roll a Heal Skill Check vs 3dTired (where dTired is extent of the Stress). A Creature taking the Catch Breath action can take no other action on their turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Catch Breath: make a Heal Skill check vs 3dTired (note that this uses Stress even if Exhausted Trauma is present). EFFECT: Steps down their own Exhausted Trauma (or eliminates it if they spend a Plot Point). SUCCESS: If the Effect Die is less than the current level of Tired Stress, it becomes the new level of Tired Stress. If it is equal to or greater than the current level, all Tired Stress is eliminated. FAILURE: Step down Tired Stress as well as Exhausted Trauma.}}" name="roll_ShakeItOff">Catch Breath (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL CLEAN: For Disabled Trauma and Disfigured Stress on self or adjacent target. EFFECT: All Disfigured Stress is removed and Disabled Trauma is stepped down (or removed if the creature taking the Wash Action spends Plot Point."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Wash themself or an adjacent target: EFFECT: Eliminates target's Disfigured Stress and steps down the target's Disabled Trauma (or eliminates it if they spend a Plot Point).}}" name="roll_Wash">Wash (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL MOVEMENT: For Aflame Stress on self. REQUIREMENTS: Cannot be attempted in a location which is itself on fire. No other movement actions can be done on the same turn. EFFECT: All Aflame Stress is removed and replaced with the same die of Knocked Down Stress and Prone Trauma."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=put out the fire engulfing them. EFFECT: All Aflame Stress is removed and replaced with the same die of Knocked Down Stress and Prone Trauma.}}" name="roll_StopDropAndRoll">Stop Drop and Roll (movement)</button></abbr>
 				</div>
 			<h1>Encounter Powers</h1>
 				<div>
 					<input class="user_checkbox" type="checkbox" name="roll_InfernalWrathCheckbox" value="Used"/>
 					<abbr title="TRIGGER: An enemy within 10 squares of you hits you."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=to put her Infernal Wrath on target which just hit her. Succeeding if the target is within 10 squares, the effect is: The target takes fire damage (Aflame stress damage equal to the effect die on the target's attack roll).}}" name="roll_InfernalWrath">Infernal Wrath</button></abbr>
 				</div>
-			<div>
+				<div>
+					<input class="user_checkbox" type="checkbox" name="roll_ChannelSecondWindCheckbox" value="Used"/>
+					<abbr title="EFFECT: Character spends one Healing Surge. They may eliminate one type of Stress or step down one type of Trauma. IF THEY ALSO SPEND A PLOT POINT: They may instead eliminate one type of Trauma."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=catch their Second Wind, spending a Healing Surge. By doing this they may eliminate all of one type of Stress or step down one type of Trauma. By also spending a Plot Point, they may instead eliminate one type of Trauma.}}" name="roll_SecondWind">Second Wind</button></abbr>
+				</div>
+				<div>
 				<input class="user_checkbox" type="checkbox" name="roll_SpriteWarCallCheckbox" value="Used"/>
 				<abbr title="HIT: Effect die nature damage, and target grants you combat advantage until the end of your next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Sprite War Call at target's Reflex}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{Encounter_dice_size=8}} {{Encounter8=[[1d8]]}} {{Encounter=[[0d0 + 8]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_SpriteWarCall">Sprite War Call</button></abbr>
-				<abbr title="Prime Shot: Can only be used if no ally is closer to the target. HIT: Effect die nature damage, and target grants you combat advantage until the end of your next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Sprite War Call at target's Reflex if no allies are closer to target than Roan}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{Encounter_dice_size=10}} {{Encounter8=[[1d10]]}} {{Encounter=[[0d0 + 8]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_SpriteWarCall">Sprite War Call (w/ Prime Shot)</button></abbr>
-			</div>
+				<abbr title="Prime Shot: Can only be used if no ally is closer to the target. Step up any Asset used. HIT: Effect die nature damage, and target grants you combat advantage until the end of your next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Sprite War Call at target's Reflex if no allies are closer to target than Roan}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{Encounter_dice_size=10}} {{Encounter8=[[1d10]]}} {{Encounter=[[0d0 + 8]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_SpriteWarCall">Sprite War Call (w/ Prime Shot)</button></abbr>
+				</div>
 			<h1>Daily Powers</h1>
 				<div>
 					<input class="user_checkbox" type="checkbox" name="roll_DecreeOfKhiradCheckbox" value="Used"/>
@@ -1340,6 +1476,9 @@
 				</div>
 			<h1>At-Will Powers</h1>
 				<div>
+					<abbr title="BASIC: Melee. HIT: Effect die weapon (slashing) damage."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make a Dagger Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_DaggerStrike">Dagger</button></abbr>
+				</div>
+				<div>
 					<abbr title="HIT: Effect die psychic damage."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Chaos Bolt at target's Will}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_ChaosBolt">Chaos Bolt</button></abbr>
 				</div>
 				<div>
@@ -1348,10 +1487,32 @@
 				<div>
 					<abbr title="RANGED BASIC: Range 10. HIT: Effect die cold damage."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Dragonfrost at target's Fortitude}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_DragonFrost">Dragonfrost</button></abbr>
 				</div>
+				<div>
+					<abbr title="SECOND WIND: Target gets Second Wind without spending an action. STABILIZE THE DYING: This presumes the target has Trauma past d12. The healer rolls a Heal Skill check vs 3d12. On a success, the Effect Die becomes the new Trauma level. If the Healer also spends a Plot Point, they may instead eliminate one type of Trauma. SAVING THROW: Either, 1) allow the target to make an immediate Saving Throw against a Condition that a Saving Throw can end, or 2) grant a 1d6 bonus to a Saving Throw at the end of the target's next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Heal an adjacent character. HEAL: 1) allow the target to spend their Second Wind; 2) make a Heal Skill check for Stabilize the Dying; or 3) grant a Saving Throw.}}" name="roll_FirstAid">First Aid</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL FIRST AID: For Puncture Trauma and Poison Conditions. Often happens automatically when you remove the thing that punctured them. Roll a Heal Skill Check vs 3dPuncture (where dPuncture is extent of the Trauma). Or roll Heal Skill vs 3dPoison (where dPoison is the extent of the Trauma)."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Heal self or an adjacent character. HEAL: 1) remove arrow or other piercing/poisoning weapon; and 2) make a Heal Skill check vs 3dCondition. SUCCESS FOR PUNCTURE WOUNDS: put 1d4 Bleeding Stress on target and step Puncture Trauma down or spend a Plot Point to put Effect Die Bleeding Stress on target and eliminate Punctured Trauma; SUCCESS FOR POISON: The Effect Die is ignored for such healing and is treated as whatever the Envenomed die was. The healed creature gets Bleeding condition at the same level as the Envenomed Stress and the Poisoned Damage is stepped down by one. Spending a Plot Point will end the Poisoned Trauma AND the Envenomed Stress.}}" name="roll_MakeItBleed">Make It Bleed (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL HEAL: For Stunned Trauma and Staggered/Dazed Stress. Roll a Heal Skill Check vs 3dStress (where dStress is extent of the Stress)."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Clear the cobwebs from his brain: Make a Heal Skill check vs 3dStress (note that this uses Stress even if Stunned Trauma is present). SUCCESS: Eliminate all Stress on self and step Stunned Trauma down (or spend a Plot Point to eliminate Trauma); FAILURE: Step both Dazed/Staggered Stress and Stunned Trauma down by one.}}" name="roll_ShakeItOff">Shake It Off (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL REST: For Exhausted Trauma and Tired Stress. Roll a Heal Skill Check vs 3dTired (where dTired is extent of the Stress). A Creature taking the Catch Breath action can take no other action on their turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Catch Breath: make a Heal Skill check vs 3dTired (note that this uses Stress even if Exhausted Trauma is present). EFFECT: Steps down their own Exhausted Trauma (or eliminates it if they spend a Plot Point). SUCCESS: If the Effect Die is less than the current level of Tired Stress, it becomes the new level of Tired Stress. If it is equal to or greater than the current level, all Tired Stress is eliminated. FAILURE: Step down Tired Stress as well as Exhausted Trauma.}}" name="roll_ShakeItOff">Catch Breath (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL CLEAN: For Disabled Trauma and Disfigured Stress on self or adjacent target. EFFECT: All Disfigured Stress is removed and Disabled Trauma is stepped down (or removed if the creature taking the Wash Action spends Plot Point."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Wash themself or an adjacent target: EFFECT: Eliminates target's Disfigured Stress and steps down the target's Disabled Trauma (or eliminates it if they spend a Plot Point).}}" name="roll_Wash">Wash (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL MOVEMENT: For Aflame Stress on self. REQUIREMENTS: Cannot be attempted in a location which is itself on fire. No other movement actions can be done on the same turn. EFFECT: All Aflame Stress is removed and replaced with the same die of Knocked Down Stress and Prone Trauma."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=put out the fire engulfing them. EFFECT: All Aflame Stress is removed and replaced with the same die of Knocked Down Stress and Prone Trauma.}}" name="roll_StopDropAndRoll">Stop Drop and Roll (movement)</button></abbr>
+				</div>
 			<h1>Encounter Powers</h1>
 				<div>
 					<input class="user_checkbox" type="checkbox" name="roll_ExplosivePyreCheckbox" value="Used"/>
 					<abbr title="Range: 10 (one creature). HIT: Effect die fire damage. Until the start of your next turn, any enemy that enters a square adjacent to the target (or starts its turn there) takes 1d6 fire damage. ESCALATION: Can be used to escalate any fire attack."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Explosive Pyre at target's Reflex}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{Encounter_dice_size=8}} {{Encounter8=[[1d8]]}} {{Encounter=[[0d0 + 8]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_ExplosivePyre">Explosive Pyre</button></abbr>
+				</div>
+				<div>
+					<input class="user_checkbox" type="checkbox" name="roll_ChannelSecondWindCheckbox" value="Used"/>
+					<abbr title="EFFECT: Character spends one Healing Surge. They may eliminate one type of Stress or step down one type of Trauma. IF THEY ALSO SPEND A PLOT POINT: They may instead eliminate one type of Trauma."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=catch their Second Wind, spending a Healing Surge. By doing this they may eliminate all of one type of Stress or step down one type of Trauma. By also spending a Plot Point, they may instead eliminate one type of Trauma.}}" name="roll_SecondWind">Second Wind</button></abbr>
 				</div>
 			<h1>Daily Powers</h1>
 					<div>
@@ -1414,6 +1575,9 @@
 				</div>
 			<h1>At-Will Powers</h1>
 				<div>
+					<abbr title="BASIC: Melee. HIT: Effect die weapon (slashing) damage."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make a Sword Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_SwordStrike">Sword</button></abbr>
+				</div>
+				<div>
 					<abbr title="HIT: Effect die weapon (slashing) damage. HITS ON MARKED TARGETS: The target adds an Enfeebling Die (1d4) to all attack rolls until the end of the Paladin's next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make an Enfeebling Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_EnfeeblingStrike">Enfeebling Strike</button></abbr>
 				</div>
 				<div>
@@ -1426,17 +1590,44 @@
 					<abbr title="HIT: Effect die weapon (slashing) damage. And add your Wisdom Die to your Temporary Resistance Skill."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make a Bolstering Strike at target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_BolsteringStrike">Bolstering Strike</button></abbr>
 				</div>
 				<div>
-					<button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make a Challenging Strike at target's AC (or Will if bloodied)}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_ChalleningStrike">Challenging Strike</button>
+					<abbr title="HIT: Effect die weapon (slashing) damage, and the target is marked until the end of MacDougal's next turn or until he moves into a square not adjacent to the target. IF MacDOUGAL IS BLOODIED: This attack is made against the lesser of the target's AC or Will."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=make a Challenging Strike at target's AC (or Will if bloodied)}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{AtWill_dice_size=6}} {{AtWill6=[[1d6]]}} {{AtWill=[[0d0 + 6]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_ChalleningStrike">Challenging Strike</button></abbr>
+				</div>
+				<div>
+					<abbr title="SECOND WIND: Target gets Second Wind without spending an action. STABILIZE THE DYING: This presumes the target has Trauma past d12. The healer rolls a Heal Skill check vs 3d12. On a success, the Effect Die becomes the new Trauma level. If the Healer also spends a Plot Point, they may instead eliminate one type of Trauma. SAVING THROW: Either, 1) allow the target to make an immediate Saving Throw against a Condition that a Saving Throw can end, or 2) grant a 1d6 bonus to a Saving Throw at the end of the target's next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Heal an adjacent character. HEAL: 1) allow the target to spend their Second Wind; 2) make a Heal Skill check for Stabilize the Dying; or 3) grant a Saving Throw.}}" name="roll_FirstAid">First Aid</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL FIRST AID: For Puncture Trauma and Poison Conditions. Often happens automatically when you remove the thing that punctured them. Roll a Heal Skill Check vs 3dPuncture (where dPuncture is extent of the Trauma). Or roll Heal Skill vs 3dPoison (where dPoison is the extent of the Trauma)."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Heal self or an adjacent character. HEAL: 1) remove arrow or other piercing/poisoning weapon; and 2) make a Heal Skill check vs 3dCondition. SUCCESS FOR PUNCTURE WOUNDS: put 1d4 Bleeding Stress on target and step Puncture Trauma down or spend a Plot Point to put Effect Die Bleeding Stress on target and eliminate Punctured Trauma; SUCCESS FOR POISON: The Effect Die is ignored for such healing and is treated as whatever the Envenomed die was. The healed creature gets Bleeding condition at the same level as the Envenomed Stress and the Poisoned Damage is stepped down by one. Spending a Plot Point will end the Poisoned Trauma AND the Envenomed Stress.}}" name="roll_MakeItBleed">Make It Bleed (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL HEAL: For Stunned Trauma and Staggered/Dazed Stress. Roll a Heal Skill Check vs 3dStress (where dStress is extent of the Stress)."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Clear the cobwebs from his brain: Make a Heal Skill check vs 3dStress (note that this uses Stress even if Stunned Trauma is present). SUCCESS: Eliminate all Stress on self and step Stunned Trauma down (or spend a Plot Point to eliminate Trauma); FAILURE: Step both Dazed/Staggered Stress and Stunned Trauma down by one.}}" name="roll_ShakeItOff">Shake It Off (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL REST: For Exhausted Trauma and Tired Stress. Roll a Heal Skill Check vs 3dTired (where dTired is extent of the Stress). A Creature taking the Catch Breath action can take no other action on their turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Catch Breath: make a Heal Skill check vs 3dTired (note that this uses Stress even if Exhausted Trauma is present). EFFECT: Steps down their own Exhausted Trauma (or eliminates it if they spend a Plot Point). SUCCESS: If the Effect Die is less than the current level of Tired Stress, it becomes the new level of Tired Stress. If it is equal to or greater than the current level, all Tired Stress is eliminated. FAILURE: Step down Tired Stress as well as Exhausted Trauma.}}" name="roll_ShakeItOff">Catch Breath (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL CLEAN: For Disabled Trauma and Disfigured Stress on self or adjacent target. EFFECT: All Disfigured Stress is removed and Disabled Trauma is stepped down (or removed if the creature taking the Wash Action spends Plot Point."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=Wash themself or an adjacent target: EFFECT: Eliminates target's Disfigured Stress and steps down the target's Disabled Trauma (or eliminates it if they spend a Plot Point).}}" name="roll_Wash">Wash (minor)</button></abbr>
+				</div>
+				<div>
+					<abbr title="SPECIAL MOVEMENT: For Aflame Stress on self. REQUIREMENTS: Cannot be attempted in a location which is itself on fire. No other movement actions can be done on the same turn. EFFECT: All Aflame Stress is removed and replaced with the same die of Knocked Down Stress and Prone Trauma."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=put out the fire engulfing them. EFFECT: All Aflame Stress is removed and replaced with the same die of Knocked Down Stress and Prone Trauma.}}" name="roll_StopDropAndRoll">Stop Drop and Roll (movement)</button></abbr>
 				</div>
 			<h1>Encounter Powers</h1>
 				<div>
 					<input class="user_checkbox" type="checkbox" name="roll_DazzlingFlareCheckbox" value="Used"/>
-					<button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Dazzling Flare at target's Reflex}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{Encounter_dice_size=8}} {{Encounter8=[[1d8]]}} {{Encounter=[[0d0 + 8]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_DazzlingFlare">Dazzling Flare</button>
+					<abbr title="HIT: Effect die radiant (dazzling) damage, and the target steps down all attack dice until the end of MacDougal's next turn."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=cast Dazzling Flare at target's Reflex}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 4]]}} {{Encounter_dice_size=8}} {{Encounter8=[[1d8]]}} {{Encounter=[[0d0 + 8]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_DazzlingFlare">Dazzling Flare</button></abbr>
+				</div>
+				<div>
+					<input class="user_checkbox" type="checkbox" name="roll_ChannelSecondWindCheckbox" value="Used"/>
+					<abbr title="EFFECT: Character spends one Healing Surge. They may eliminate one type of Stress or step down one type of Trauma. IF THEY ALSO SPEND A PLOT POINT: They may instead eliminate one type of Trauma."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=catch their Second Wind, spending a Healing Surge. By doing this they may eliminate all of one type of Stress or step down one type of Trauma. By also spending a Plot Point, they may instead eliminate one type of Trauma.}}" name="roll_SecondWind">Second Wind</button></abbr>
+				</div>
+				<div>
+					<input class="user_checkbox" type="checkbox" name="roll_ChannelDivinityCheckbox" value="Used"/>
+					<abbr title="CHANNEL DIVINITY: MacDougal can only channel Andrea Ravn's divinity once per encounter. IMMEDIATE INTERRUPT: MacDougal can also use this as an immediate interrupt when a Creature with 10 hexes is attacked. The Paladin grants the Creature a bonus equal to his Charisma Die to one defense."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=put Divine Mettle on target within 10 hexes. The target makes a Saving Throw with a bonus equal to the Paladin's Charisma Die.}}" name="roll_Mettle">Divine Mettle (minor)</button></abbr>
+					<abbr title="CHANNEL DIVINITY: MacDougal can only channel Andrea Ravn's divinity once per encounter."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=put Divine Strength on himself. The Paladin can use his Strength Die in place of the Effect Die on his next attack this turn.}}" name="roll_DivineStrength">Divine Strength (minor)</button></abbr>
 				</div>
 			<h1>Daily Powers</h1>
 				<div>
 					<input class="user_checkbox" type="checkbox" name="roll_PaladinsJudgmentCheckbox" value="Used"/>
-					<button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=demand Paladin's Judgment on target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{Daily_dice_size=10}} {{Daily10=[[1d10]]}} {{Daily=[[0d0 + 10]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_PaladinsJudgement">Paladin's Judgment</button>
+					<abbr title="HIT: Effect die weapon (slashing) damage. And one ally within 5 hexes can spend a healing surge. MISS: One ally within 5 squares can spend a healing surge."><button type="roll" value="&{template:Cortex} {{portrait=@{ctoken}}} {{name=@{character_name}}} {{attempts=demand Paladin's Judgment on target's AC}} {{Dexterity_dice_size=@{Dexterity}}} {{Dexterity=[[1d@{Dexterity}]]}} {{Constitution_dice_size=@{Constitution}}} {{Constitution=[[1d@{Constitution}]]}} {{Charisma_dice_size=@{Charisma}}} {{Charisma=[[1d@{Charisma}]]}} {{Intelligence_dice_size=@{Intelligence}}} {{Intelligence=[[1d@{Intelligence}]]}} {{Wisdom_dice_size=@{Wisdom}}} {{Wisdom=[[1d@{Wisdom}]]}} {{Strength_dice_size=@{Strength}}} {{Strength=[[1d@{Strength}]]}} {{trait_name=[[0d0 + 7]]}} {{Daily_dice_size=10}} {{Daily10=[[1d10]]}} {{Daily=[[0d0 + 10]]}} {{Distinction_dice_size=8}} {{Distinction=[[1d8]]}} {{Hinder_dice_size=4}} {{Hinder=[[1d4]]}} {{Distinction_Hinder=[[0d0 +?{Does your distinction help or hinder?|Help,1|Hinder,2}]]}} {{Asset6=[[1d6]]}} {{Asset8=[[1d8]]}} {{Asset10=[[1d10]]}} {{Asset12=[[1d12]]}} {{Asset=[[0d0 +?{Do you have a relevant asset?|No,0|D6,6|D8,8|D10,10|D12,12}]]}}" name="roll_PaladinsJudgement">Paladin's Judgment</button></abbr>
 				</div>
 			</div>
 			</div>
@@ -1714,11 +1905,11 @@
 			</div>
 			<div class="sheet-PC4 sheet-distinction">
 				<h2>Leather Armor <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
-				<p class="sheet-trigger">Tough, leather armor gives a base AC of d8. Thick, it has a base Fortitude of d6. Light and soft, its base Reflex is d10. The designs give its wearer confidence, making its base Will a d8. Not magic, so it adds only a d6 as an asset.</p>
+				<p class="sheet-trigger">Tough, leather armor gives a base AC of d8. Thick, it has a base Fortitude of d6. Light and soft, its base Reflex is d10. The designs give its wearer confidence, making its base Will a d8. Its basic magic enchantment adds only a d6 as an asset.</p>
 			</div>
 			<div class="sheet-PC4 sheet-distinction">
-				<h2>Neck Item? <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
-				<p class="sheet-trigger">Does something, right?</p>
+				<h2>Amulet of Protection <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
+				<p class="sheet-trigger">Light blue amulet adds to Fortitude, Reflex and Will Defenses.</p>
 			</div>
 			<div class="sheet-PC5 sheet-distinction">
 				<h2>Chronicles of Elarion <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
@@ -1737,16 +1928,16 @@
 				<p class="sheet-trigger">Worn on a chain around your neck, it gives you a magic bonus to Will, Reflex and Fortitude.</p>
 			</div>
 			<div class="sheet-PC7 sheet-distinction">
-				<h2>Magic Plate Armor <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
-				<p class="sheet-trigger">Made of hardened iron, this plate Armor has a base AC of d10. Heavy, its base Fortitude Defense is d8. Buffed to a brilliant shine, its base Will Defense is also a d8. So weighty that most cannot move in it, its base Reflex is d4. Because it is magically enhanced, it adds a d8 to AC.</p>
+				<h2>Plate Armor of Eye <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" alt="8" width="25" height="25" align="right" /></h2>
+				<p class="sheet-trigger">Made of hardened iron, this plate Armor has a base AC of d10. Heavy, its base Fortitude Defense is d8. Buffed to a brilliant shine, its base Will Defense is also a d8. So weighty that most cannot move in it, its base Reflex is d4. Because it is magically enhanced, it adds a d8 to AC. The eyes on this heavy armor constantly watch for incoming attacks. You get a d6 assets bonus to Perception checks. FREE ENCOUNTER ACTION: Triggered when an enemy targets you and you're granting combat advantage to it. EFFECT: You don't grant combat advantage to the triggering enemy for this attack.</p>
 			</div>
 			<div class="sheet-PC7 sheet-distinction">
-				<h2>Sword <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
-				<p class="sheet-trigger">Because this blade requires 2 hands, it adds a d6 to any weapon attack.</p>
+				<h2>Challenge-Seeking Halberd <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
+				<p class="sheet-trigger">Reach 2; this blade requires 2 hands, adding a d6 to any weapon attack. Because this weapon is eager to be introduced to a new enemy, MacDougal's Effect Die is automatically stepped up when he hits enemies who have no Stress or Trauma.</p>
 			</div>
 			<div class="sheet-PC7 sheet-distinction">
-				<h2>Other Item <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
-				<p class="sheet-trigger">This non-magical item does something.</p>
+				<h2>Amulet of Protection <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
+				<p class="sheet-trigger">Light blue amulet adds to Fortitude, Reflex and Will Defenses.</p>
 			</div>
 			<div class="sheet-PC8 sheet-distinction">
 				<h2>Beetle Brooch <img src="https://raw.githubusercontent.com/tapiochre/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" alt="6" width="25" height="25" align="right" /></h2>
@@ -1800,7 +1991,7 @@
 	<h1>Physical Stress</h1>
 	<div class="sheet-cols2">
 		
-		<abbr title="At the start of each of the Bleeding creature’s turns, it steps up. Once it is stepped up past d12, the character is Bloodied, the trauma version of Bleeding."><input type="hidden" class="sheet-locked" name="attr_BleedingStress" value="2" />
+		<abbr title="At the start of each of the Bleeding creature’s turns, it steps up. Once it is stepped up past d12, the character is Bloodied, the trauma version of Bleeding. Any adjacent creature (or the Bleeding Creature itself) can take a Minor Action to Staunch which automatically stops the step-up effect."><input type="hidden" class="sheet-locked" name="attr_BleedingStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_BleedingStress" value="2" />
@@ -1849,7 +2040,7 @@
 			Punctured</h2>
 		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_StaggeredStress" value="2" />
+		<abbr title="Staggered and Dazed creatures can only take a single action each turn. Staggered Creatures can only move half their usual movement (rounded down, so shift 1 becomes no shift allowed). Once Staggered is stepped up past d12, the character is Stunned, the trauma version. During battles, contests and challenges, Staggered Stress steps down at the end of the Dazed creature's turn and can also be removed with the Shake it off action."><input type="hidden" class="sheet-locked" name="attr_StaggeredStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_StaggeredStress" value="2" />
@@ -1871,9 +2062,9 @@
 				<option value="14">Stressed out - Stunned</option>
 			</select>
 			Staggered</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_FatigueStress" value="2" />
+		<abbr title="Tired and Exhausted Creatures can heal themselves with the Catch Breath Minor Action. A Creature taking the Catch Breath action can take no other action on their turn. They roll their own Heal Skill check vs 3dTired, which automatically has the Effect of stepping down their Exhausted Trauma (or eliminating it if they spend a Plot Point). If the Effect Die is less than the current level of Tired Stress, it becomes the new level of Tired Stress. If it is equal to or greater than the current level, all Tired Stress is eliminated."><input type="hidden" class="sheet-locked" name="attr_FatigueStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_FatigueStress" value="2" />
@@ -1895,7 +2086,7 @@
 				<option value="14">Stressed out - Exhausted</option>
 			</select>
 			Tired</h2>
-		</div>
+		</div></abbr>
 	</div>
 
 </div>
@@ -1903,7 +2094,7 @@
 	<h1>Physical Trauma</h1>
 	<div class="sheet-cols2">
 
-		<input type="hidden" class="sheet-locked" name="attr_BloodiedTrauma" value="2" />
+		<abbr title="Once Bleeding Stress is stepped up past d12, the character is Bloodied. Bloodied characters cannot be healed unless they (or the healer) spends a Plot Point."><input type="hidden" class="sheet-locked" name="attr_BloodiedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_BloodiedTrauma" value="2" />
@@ -1925,9 +2116,9 @@
 				<option value="14">Exsanguinated</option>
 			</select>
 			Bloodied</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_PuncturedTrauma" value="2" />
+		<abbr title="Puncture damage goes straight to trauma for living creatures. Punctured creatures cannot take Standard Actions. But they do have Minor Action called Make it Bleed (Heal Skill check vs 3dPuncture). A successful Make It Bleed steps the Puncture Trauma down by one and gives the character a 1d4 Bleeding Condition."><input type="hidden" class="sheet-locked" name="attr_PuncturedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_PuncturedTrauma" value="2" />
@@ -1949,9 +2140,9 @@
 				<option value="14">Through and through</option>
 			</select>
 			Punctured</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_StunnedTrauma" value="2" />
+		<abbr title="Stunned Creatures can only take the Minor Action Shake It Off (Heal vs 3dStress). Note that this is against 3dStaggered or 3dDazed, not 3dStunned."><input type="hidden" class="sheet-locked" name="attr_StunnedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_StunnedTrauma" value="2" />
@@ -1973,9 +2164,9 @@
 				<option value="14">Knocked Out</option>
 			</select>
 			Stunned</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_ExhaustedTrauma" value="2" />
+		<abbr title="Once Tired Stress is stepped up past d12, the character is Exhausted, the Trauma version. Both Tired Stress and Exhausted Trauma go away at the end of the encounter or after a rest (long or short)."><input type="hidden" class="sheet-locked" name="attr_ExhaustedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_ExhaustedTrauma" value="2" />
@@ -1997,13 +2188,13 @@
 				<option value="14">Fainted (coma)</option>
 			</select>
 			Exhausted</h2>
-		</div>
+		</div></abbr>
 
 	</div>
 	<h1>Elemental Stress</h1>
 	<div class="sheet-cols2">
 
-		<input type="hidden" class="sheet-locked" name="attr_EnvenomedStress" value="2" />
+		<abbr title="Once Envenomed is stepped up past d12, the character is Poisoned, the Trauma version. An Envenomed creature has their Effect Die on Attack rolls and Ability Checks (including all self-healing except Making It Bleed) stepped down. Envenomed and Poisoned Creatures can be healed with Making It Bleed Minor Action (Heal vs 3dEnvenomed). The Effect Die is ignored for such healing and is treated as whatever the Envenomed die was. The healed creature gets Bleeding condition at the same level as the Envenomed Stress and the Poisoned Damage is stepped down by one (spending a Plot Point will end the Trauma). The Envenomed Damage is ended. Each time the Envenomed creature is not healed on its turn, this condition is automatically tepped up."><input type="hidden" class="sheet-locked" name="attr_EnvenomedStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_EnvenomedStress" value="2" />
@@ -2025,12 +2216,12 @@
 				<option value="14">Stressed out - Poisoned</option>
 			</select>
 			Envenomed</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_DissolvingStress" value="2" />
+		<abbr title="Once Acid Stress is stepped up past d12, the character is Disabled, the trauma version. The Stress Die is doubled (stepped up by a number of steps equal to the Effect Die rolled, max d12) for Charisma checks and related Skills (Bluff and Diplomacy) and ignored for Intimidation. This Effect Die automatically Steps Down at the end of the Disfigured creature's turn each round. Swimming and Wash Minor Actions will automatically remove the Disfigured Status Effect."><input type="hidden" class="sheet-locked" name="attr_DisfiguredStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
-			<input type="hidden" class="sheet-locked" name="attr_DissolvingStress" value="2" />
+			<input type="hidden" class="sheet-locked" name="attr_DisfiguredStress" value="2" />
 			<span>
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="top" width="25" height="25" alt="d4" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="top" width="25" height="25" alt="d6" />
@@ -2039,19 +2230,19 @@
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d12-280x280.png" align="top" width="25" height="25" alt="d12" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d14-280x280.png" align="top" width="25" height="25" alt="stressed" />
 			</span>
-			<select name="attr_DissolvingStress">
+			<select name="attr_DisfiguredStress">
 				<option value="2">no acid damage</option>
 				<option value="4">d4</option>
 				<option value="6">d6</option>
 				<option value="8">d8</option>
 				<option value="10">d10</option>
 				<option value="12">d12</option>
-				<option value="14">Stressed out - Disfigured</option>
+				<option value="14">Stressed out - Disabled</option>
 			</select>
-			Dissolved</h2>
-		</div>
+			Disfigured</h2>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_MarbledStress" value="2" />
+		<abbr title="A creature with Marbled Stress Damage is partially Petrified. Its weight doubles and the Stress Die acts as an AC and Fortitude Defense. Once Marbled Stress is stepped up past d12, the character is Petrified, the Trauma version. Only magical healing can reduce Marbled Stress or Petrified Trauma during battle, contests or challenges. A short rest eliminates all Marbled Stress."><input type="hidden" class="sheet-locked" name="attr_MarbledStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_MarbledStress" value="2" />
@@ -2073,8 +2264,8 @@
 				<option value="14">Stressed out - Petrified</option>
 			</select>
 			Marbled</h2>
-		</div>
-	<input type="hidden" class="sheet-locked" name="attr_FireStress" value="2" />
+		</div></abbr>
+		<abbr title="A creature that comes under the effect of the Aflame condition may feel an agonizing pain in the area affected. The Aflame condition steps up each turn in which it is not dowsed. Dowsing with a glass of water or the contents of a canteen arrests this for one turn. Once Aflame Stress is stepped up past d12, the character is Burned, the Trauma version. Swimming or immersing oneself in a body of water ends the Aflame condition entirely. As does the Stop, Drop and Roll action, which must be performed in a place that is not itself Aflame. This action precludes all movement in the turn it is executed, automatically makes you Knocked Down and Prone (at the same level as your Aflame die), and ends the Aflame Stress."><input type="hidden" class="sheet-locked" name="attr_FireStress" value="2" />
 	<div class="sheet-stress">
 		<h2>
 		<input type="hidden" class="sheet-locked" name="attr_FireStress" value="2" />
@@ -2096,9 +2287,9 @@
 			<option value="14">Stressed out - Burned</option>
 		</select>
 		Aflame</h2>
-	</div>
+	</div></abbr>
 
-	<input type="hidden" class="sheet-locked" name="attr_ColdStress" value="2" />
+	<abbr title="When a creature is hit by an attack that inflicts cold damage or it spends too much time in a cold environment, Chilled Stress is applied. This condition affects the creature's stamina and its body movements, causing shivering and numbness. Speed is reduced by 2. Once Chilled Stress is stepped up past d12, the character is Frozen, the Trauma version. As a Standard Action, a Chilled creature can make a Athletics (or Survival) Skill check vs 3dChilled. If they succeed and their Effect Die is larger than the Chilled Stress Die, the Chilled Stress goes away. A lesser success steps down the Stress to whatever the Effect Die is."><input type="hidden" class="sheet-locked" name="attr_ColdStress" value="2" />
 	<div class="sheet-stress">
 		<h2>
 		<input type="hidden" class="sheet-locked" name="attr_ColdStress" value="2" />
@@ -2120,9 +2311,9 @@
 			<option value="14">Stressed out - Frozen</option>
 		</select>
 		Chilled</h2>
-	</div>
+	</div></abbr>
 
-	<input type="hidden" class="sheet-locked" name="attr_RadiantStress" value="2" />
+	<abbr title="Dazzled Stress steps down at the end of the Dazzled creature's turn. If a Dazzled Creature makes a Blast or Burst attack, the Dazzled Stress does not add to the Defense. Once Dazzled Stress is stepped up past d12, the character is Blinded, the Trauma version. Dazzled Stress goes away on a short rest."><input type="hidden" class="sheet-locked" name="attr_RadiantStress" value="2" />
 	<div class="sheet-stress">
 		<h2>
 		<input type="hidden" class="sheet-locked" name="attr_RadiantStress" value="2" />
@@ -2135,7 +2326,7 @@
 			<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d14-280x280.png" align="top" width="25" height="25" alt="stressed" />
 		</span>
 		<select name="attr_RadiantStress">
-			<option value="2">ununradiated</option>
+			<option value="2">unirradiated</option>
 			<option value="4">d4</option>
 			<option value="6">d6</option>
 			<option value="8">d8</option>
@@ -2144,9 +2335,9 @@
 			<option value="14">Stressed out - Blinded</option>
 		</select>
 		Dazzled</h2>
-	</div>
+	</div></abbr>
 
-	<input type="hidden" class="sheet-locked" name="attr_NecroticStress" value="2" />
+	<abbr title="A Diseased creature's speed is reduced by one and all of their Effect Dice are stepped down. The GM is responsible for any additional or lingering effects of Disease Stress. Usually this involves lingering Conditions. Once Diseased Stress is stepped up past d12, the character is Gangrenous, the Trauma version. Both Disease Stress and Gangrenous Trauma can be healed with both magical healing and the Heal Skill (Standard Action)."><input type="hidden" class="sheet-locked" name="attr_NecroticStress" value="2" />
 	<div class="sheet-stress">
 		<h2>
 		<input type="hidden" class="sheet-locked" name="attr_NecroticStress" value="2" />
@@ -2168,9 +2359,9 @@
 			<option value="14">Stressed out - Gangrene</option>
 		</select>
 		Diseased</h2>
-	</div>
+	</div></abbr>
 
-	<div class="sheet-stress">
+	<abbr title="Shocked Stress steps down by 2 dice sizes at the end of the Shocked Creature's turn. Once it is stepped up past d12, the character is Electrified, the Trauma version. Any Melee Attack that hits a Shocked or Electrified Creature does 1d4 Shocked Stress to the attacker (d6 if the weapon is metallic). Shocked Stress goes away after any rest."><div class="sheet-stress">
 		<h2>
 		<input type="hidden" class="sheet-locked" name="attr_ElectricStress" value="2" />
 		<span>
@@ -2191,14 +2382,14 @@
 			<option value="14">Stressed out - Electrified</option>
 		</select>
 		Lightning</h2>
-	</div>
+	</div></abbr>
 
 </div>
 <div class="sheet-cols1">
 	<h1>Elemental Trauma</h1>
 	<div class="sheet-cols2">
 
-		<input type="hidden" class="sheet-locked" name="attr_PoisonedTrauma" value="2" />
+		<abbr title="Envenomed and Poisoned Creatures can be healed with Making It Bleed Minor Action (Heal vs 3dEnvenomed). The Effect Die is ignored for such healing and is treated as whatever the Envenomed die was. The healed creature gets Bleeding condition at the same level as the Envenomed Stress and the Poisoned Damage is stepped down by one (spending a Plot Point will end the Trauma). The Envenomed Damage is ended. Each time the Envenomed creature is not healed on its turn, this condition is automatically Stepped Up by 1."><input type="hidden" class="sheet-locked" name="attr_PoisonedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_PoisonedTrauma" value="2" />
@@ -2220,12 +2411,12 @@
 				<option value="14">Too poisoned to function</option>
 			</select>
 			Poisoned</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_DisfiguredTrauma" value="2" />
+		<abbr title="Once Acid Stress is stepped up past d12, the character is Disabled, the Trauma version. Swimming and Wash actions will remove Disabled Trauma if the person taking the action spends a Plot Point."><input type="hidden" class="sheet-locked" name="attr_DisabledTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
-			<input type="hidden" class="sheet-locked" name="attr_DisfiguredTrauma" value="2" />
+			<input type="hidden" class="sheet-locked" name="attr_DisabledTrauma" value="2" />
 			<span>
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="top" width="25" height="25" alt="d4" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="top" width="25" height="25" alt="d6" />
@@ -2234,19 +2425,19 @@
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d12-280x280.png" align="top" width="25" height="25" alt="d12" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d14-280x280.png" align="top" width="25" height="25" alt="stressed" />
 			</span>
-			<select name="attr_DisfiguredTrauma">
+			<select name="attr_DisabledTrauma">
 				<option value="2">no acid trauma</option>
 				<option value="4">d4</option>
 				<option value="6">d6</option>
 				<option value="8">d8</option>
 				<option value="10">d10</option>
 				<option value="12">d12</option>
-				<option value="14">Too melted to continue</option>
+				<option value="14">Melted</option>
 			</select>
-			Disfigured</h2>
-		</div>
+			Disabled</h2>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_PetrifiedTrauma" value="2" />
+		<abbr title="A Petrified creature is transformed, along with any non-magical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging. The creature is Incapacitated, can’t move or speak, and is unaware of its surroundings. It cannot take even Minor or Move Actions. The creature with Petrified Trauma is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized. A creature's Petrified Trauma Damage adds to defense (instead of adding to attacks, as most Trauma does). For all Defenses, stacking with Marbled Stress. Only magical healing can reduce Marbled Stress or Petrified Trauma during battle, contests or challenges. Outside of these, Petrified Trauma requires a long rest (at least 8 hours) and spending a Plot Point."><input type="hidden" class="sheet-locked" name="attr_PetrifiedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_PetrifiedTrauma" value="2" />
@@ -2268,9 +2459,9 @@
 				<option value="14">Too stoned to function</option>
 			</select>
 			Petrified</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_BurnedTrauma" value="2" />
+		<abbr title="Once it is stepped up past d12, the character is Burned, the Trauma version. After a long rest, Burned Creatures get the Scarred Condition-Distinction, but their Burned Trauma is gone, assuming they spend a Plot Point."><input type="hidden" class="sheet-locked" name="attr_BurnedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_BurnedTrauma" value="2" />
@@ -2292,9 +2483,9 @@
 				<option value="14">Third-Degree Burns</option>
 			</select>
 			Burned</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_FrozenTrauma" value="2" />
+		<abbr title="A Frozen character can make a Athletics (or Survival) Skill check vs 3dChilled (Standard Action). If they succeed and their Effect Die is larger than the Frozen Trauma Die, the Frozen Trauma goes away (assuming the Frozen creature spends a Plot Point). A lesser success steps down the Trauma to whatever the Effect Die is. This doesn't affect Chilled Stress. But a similar Standard Action can be attempted the next turn."><input type="hidden" class="sheet-locked" name="attr_FrozenTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_FrozenTrauma" value="2" />
@@ -2316,9 +2507,9 @@
 				<option value="14">Frozen Solid</option>
 			</select>
 			Frozen</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_RadiantTrauma" value="2" />
+		<abbr title="A Blinded creature can’t see and automatically fails any ability check that requires sight. A Blinded Creature's Dazzled Stress continues to step down (but Blinded Trauma does not). Once the Dazzled Stress has been stepped down below d4, the Stress goes away and the Creature can spend a Plot Point to roll Perception vs 3dBlinded. On a success, the Blinded Trauma goes away if the Effect Die is greater than or equal to the remaining Trauma. If the Effect Die is less than the remaining Trauma, that Blinded Trauma is stepped down. Blinded Trauma goes away on any rest (if you spend a Plot Point)."><input type="hidden" class="sheet-locked" name="attr_RadiantTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_RadiantTrauma" value="2" />
@@ -2340,9 +2531,9 @@
 				<option value="14">Blinded by the Light</option>
 			</select>
 			Blinded</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_NecroticTrauma" value="2" />
+		<abbr title="Gangrenous diseases are contagious. Both Disease Stress and Gangrenous Trauma can be healed with both magical healing and the Heal Skill (Standard Action)."><input type="hidden" class="sheet-locked" name="attr_NecroticTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_NecroticTrauma" value="2" />
@@ -2364,9 +2555,9 @@
 				<option value="14">Decaying</option>
 			</select>
 			Gangrenous</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_ElectricTrauma" value="2" />
+		<abbr title="An Electrified Creature is paralyzed and can’t move or speak. Electrified Trauma steps down at the end of the Electrified Creature's turn. Any Melee Attack that hits a Shocked or Electrified Creature does 1d4 Shocked Stress to the attacker (d6 if the weapon is metallic). Both Shocked Stress and Electrified Trauma go away after any rest, although Trauma requires spending 1 Plot Point."><input type="hidden" class="sheet-locked" name="attr_ElectricTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_ElectricTrauma" value="2" />
@@ -2388,14 +2579,14 @@
 				<option value="14">Electrocuted</option>
 			</select>
 			Electrified</h2>
-		</div>
+		</div></abbr>
 
 
 	</div>
 	<h1>Mental Stress</h1>
 	<div class="sheet-cols2">
 
-		<input type="hidden" class="sheet-locked" name="attr_DazedStress" value="2" />
+		<abbr title="Staggered and Dazed creatures can only take a single action each turn. Dazed Creatures cannot cast Spells. Once Dazed is stepped up past d12, the character is Stunned, the trauma version. During battles, contests and challenges, Dazed Stress steps down at the end of the Dazed creature's turn and can also be removed with the Shake it off action."><input type="hidden" class="sheet-locked" name="attr_DazedStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_DazedStress" value="2" />
@@ -2417,9 +2608,9 @@
 				<option value="14">Stressed out - Stunned</option>
 			</select>
 			Dazed</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_FearStress" value="2" />
+		<abbr title="The Target of a Creature with Afraid Stress only gets the bonus to their Defenses while the source of its fear is within Line of Sight (and alive). The Afraid Creature can’t willingly move closer to the source of its fear. Once Afraid Stress is stepped up past d12, the character is Terrified, the trauma version. Afraid Stress automatically goes away after any rest (short or long)."><input type="hidden" class="sheet-locked" name="attr_FearStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_FearStress" value="2" />
@@ -2441,9 +2632,9 @@
 				<option value="14">Stressed out - Terrified</option>
 			</select>
 			Afraid</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_CalmStress" value="2" />
+		<abbr title="A Calmed Creature can’t attack anyone who hasn't attacked them in the current encounter. Once Calmed Stress is stepped up past d12, the character is Pacified, the Trauma version. Any attack on a Calmed or Pacified Creature (even by an ally with the proverbial Slap in the Face) immediately eliminates all Pacified Trauma and all Calmed Stress."><input type="hidden" class="sheet-locked" name="attr_CalmStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_CalmStress" value="2" />
@@ -2456,7 +2647,7 @@
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d14-280x280.png" align="top" width="25" height="25" alt="stressed" />
 			</span>
 			<select name="attr_CalmStress">
-				<option value="2">uncalmed</option>
+				<option value="2">alert</option>
 				<option value="4">d4</option>
 				<option value="6">d6</option>
 				<option value="8">d8</option>
@@ -2465,9 +2656,9 @@
 				<option value="14">Stressed out - Pacified</option>
 			</select>
 			Calm</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_CharmStress" value="2" />
+		<abbr title="A Deceived Creature can’t target the charmer with attacks or Skills or magical effects. The charmer gets a Stress Bonus on any Skill Check (like Bluff, Intimidate or Diplomacy) to interact socially with the Deceived Creature. Once Deceived Stress is stepped up past d12, the character is Bamboozled, the Trauma version. An ally can attempt a Standard Action Diplomacy check vs 3dDeceived to remove the Deceived Stress. If the Effect Die on a success equals or exceeds the Stress, the Deceived Stress is eliminate. If the Effect Die is less (on a success), the Deceived Stress is stepped down. On a failure, the Deceived creature argues with their ally and the Deceived Stress is stepped up."><input type="hidden" class="sheet-locked" name="attr_CharmStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_CharmStress" value="2" />
@@ -2489,9 +2680,9 @@
 				<option value="14">Stressed out - Bamboozled</option>
 			</select>
 			Deceived</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_CurseStress" value="2" />
+		<abbr title="A Warlock's Curse is always a d4 Stress but this d4 is never rolled. An Accursed Creature takes extra damage when hit by the cursing Warlock with an attack (step up stress damage)."><input type="hidden" class="sheet-locked" name="attr_CurseStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_CurseStress" value="2" />
@@ -2505,17 +2696,17 @@
 			</span>
 			<select name="attr_CurseStress">
 				<option value="2">no curse damage</option>
-				<option value="4">d4</option>
-				<option value="6">none</option>
-				<option value="8">none</option>
-				<option value="10">none</option>
-				<option value="12">none</option>
+				<option value="4">steps up damage</option>
+				<option value="6">when</option>
+				<option value="8">attacked</option>
+				<option value="10">by cursing</option>
+				<option value="12">Warlock</option>
 				<option value="14">Impossible - doesn't stack</option>
 			</select>
 			Accursed</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_PsychicStress" value="2" />
+		<abbr title="A Confused creature has Intelligence and Wisdom dice stepped down by one. If they fail an attack roll while confused, the creature that put the most recent Confusion on them can specify another target for the attack. If the new target is not within range of the attack, they will wander towards that new target, triggering opportunity attacks where appropriate. Once Confused Stress is stepped up past d12, the character is Addled, the Trauma version. At the end of the Confused creature's turns, this condition is stepped down. Any rest (long or short) removes both Confused Stress and Addled Trauma."><input type="hidden" class="sheet-locked" name="attr_PsychicStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_PsychicStress" value="2" />
@@ -2537,7 +2728,7 @@
 				<option value="14">Stressed out - Addled</option>
 			</select>
 			Confused</h2>
-		</div>
+		</div></abbr>
 
 	</div>
 </div>
@@ -2545,7 +2736,7 @@
 	<h1>Mental Trauma</h1>
 	<div class="sheet-cols2">
 
-		<input type="hidden" class="sheet-locked" name="attr_StunnedTrauma" value="2" />
+		<abbr title="Stunned Creatures can only take the Minor Action Shake It Off (Heal vs 3dStress). Note that this is against 3dStaggered or 3dDazed, not 3dStunned."><input type="hidden" class="sheet-locked" name="attr_StunnedTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_StunnedTrauma" value="2" />
@@ -2567,9 +2758,9 @@
 				<option value="14">Knocked Out</option>
 			</select>
 			Stunned</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_FearTrauma" value="2" />
+		<abbr title="A Terrified Creature cannot take any Movement Action that doesn't involve running away from the source of their fear as fast as possible (until they are out of Line of Sight, at which point they can spend a Plot Point to eliminate the Terrified Trauma and any Fear Stress from the same source)."><input type="hidden" class="sheet-locked" name="attr_FearTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_FearTrauma" value="2" />
@@ -2591,9 +2782,9 @@
 				<option value="14">Running Scared</option>
 			</select>
 			Terrified</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_PeaceTrauma" value="2" />
+		<abbr title="A Pacified Creature cannot attack anyone. Any attack on a Calmed or Pacified Creature (even by an ally with the proverbial Slap in the Face) immediately eliminates all Pacified Trauma and all Calmed Stress."><input type="hidden" class="sheet-locked" name="attr_PeaceTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_PeaceTrauma" value="2" />
@@ -2615,9 +2806,9 @@
 				<option value="14">Stupor</option>
 			</select>
 			Pacified</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_CharmTrauma" value="2" />
+		<abbr title="Bamboozled Creatures get only one Action on their turn (determined by the charmer). Bamboozled Creatures forced to attack their own allies immediately lose all Bamboozled Trauma. After the attack."><input type="hidden" class="sheet-locked" name="attr_CharmTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_CharmTrauma" value="2" />
@@ -2639,9 +2830,9 @@
 				<option value="14">Flummoxed</option>
 			</select>
 			Bamboozled</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_CurseTrauma" value="2" />
+		<abbr title="No Trauma version of Accursed."><input type="hidden" class="sheet-locked" name="attr_CurseTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_CurseTrauma" value="2" />
@@ -2663,9 +2854,9 @@
 				<option value="14">Impossible</option>
 			</select>
 			Jinxed</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_PsychicTrauma" value="2" />
+		<abbr title="Addled Creatures cannot cast Spells or say Prayers, even to heal their Addled condition. Any rest (long or short) removes both Confused Stress and Addled Trauma."><input type="hidden" class="sheet-locked" name="attr_PsychicTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_PsychicTrauma" value="2" />
@@ -2684,20 +2875,19 @@
 				<option value="8">d8</option>
 				<option value="10">d10</option>
 				<option value="12">d12</option>
-				<option value="14">Too addled to think</option>
+				<option value="14">Non Compos Mentis</option>
 			</select>
 			Addled</h2>
-		</div>
+		</div></abbr>
 
 	</div>
 
 	<h1>Movement Stress</h1>
 	<div class="sheet-cols2">
 
-		<input type="hidden" class="sheet-locked" name="attr_BindingStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
-			<input type="hidden" class="sheet-locked" name="attr_BindingStress" value="2" />
+				<abbr title="A Hobbled Creature has their speed cut in half (round down). Once Hobbled Stress is stepped up past d12, the character is Tied Up, the Trauma version. A Hobbled Creature (with hands or other prehensile limbs) can Untie themselves. But Tied Up Creatures cannot. The Untie Standard Action (Survival vs 3dHobbled) steps down the Hobbled Stress (or the Tied Up Trauma if a Plot Point is spent). A successful roll eliminates the Condition, if the Effect Die equals or exceeds the Condition die (otherwise, a successful roll steps it down)."><input type="hidden" class="sheet-locked" name="attr_BindingStress" value="2" />
 			<span>
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="top" width="25" height="25" alt="d4" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="top" width="25" height="25" alt="d6" />
@@ -2716,20 +2906,19 @@
 				<option value="14">Stressed out - Tied Up</option>
 			</select>
 			Hobbled</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_NatureStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
-			<input type="hidden" class="sheet-locked" name="attr_NatureStress" value="2" />
-			<span>
+				<abbr title="A Slowed Creature has its speed reduced by 2. Slowed creatures can't use reactions. A slowed creature can also never make more than one attack per turn. Once Slowed is stepped up past d12, the character is Immobilized, the Trauma version. The Speed Up Standard Action (Athletics vs 3DSlowed) eliminates Slowed Stress if the Effect Die exceeds the Stress. If it succeeds and the Effect Die is less than the Stress, the Stress is stepped down."><input type="hidden" class="sheet-locked" name="attr_NatureStress" value="2" />
+				<span>
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="top" width="25" height="25" alt="d4" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="top" width="25" height="25" alt="d6" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d8-280x280.png" align="top" width="25" height="25" alt="d8" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d10-280x280.png" align="top" width="25" height="25" alt="d10" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d12-280x280.png" align="top" width="25" height="25" alt="d12" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d14-280x280.png" align="top" width="25" height="25" alt="stressed" />
-			</span>
+				</span>
 			<select name="attr_NatureStress">
 				<option value="2">not slowed</option>
 				<option value="4">d4</option>
@@ -2740,9 +2929,9 @@
 				<option value="14">Stressed out - Immobilized</option>
 			</select>
 			Slowed</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_GrappleStress" value="2" />
+		<abbr title="A Grappled Creature’s speed becomes 0, and it can’t benefit from any bonus to its speed. The Grappled Stress ends if the grappler is Taken Out. The condition also ends if an Effect removes the grappled creature from the reach of the grappler, such as with a teleport. Once Grappled Stress is stepped up past d12, the character is Restrained, the Trauma version. The Escape Movement action allows the Grappled Creature to test Acrobatics vs Reflex or Athletics vs Fortitude. Success ends all Grapple Stress."><input type="hidden" class="sheet-locked" name="attr_GrappleStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_GrappleStress" value="2" />
@@ -2764,9 +2953,9 @@
 				<option value="14">Stressed out - Restrained</option>
 			</select>
 			Grappled</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_ThunderStress" value="2" />
+		<abbr title="A Knocked Down Creature is on their knees or back (or they are sitting). They can attack (the defender gets their Stress as a bonus to Defenses). Crossbow Assets step up by one for Knocked Down Creatures. Once Knocked Down Stress is stepped up past d12, the character is Prone, the Trauma version. A Prone or Knocked Down Creature can take a move action and remove one step of Trauma (first) or Stress (once all Prone Trauma is gone) for each movement point spent. But they cannot actually move until all Knocked Down Stress is gone. They can never shift."><input type="hidden" class="sheet-locked" name="attr_ThunderStress" value="2" />
 		<div class="sheet-stress">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_ThunderStress" value="2" />
@@ -2788,7 +2977,7 @@
 				<option value="14">Stressed out - Prone</option>
 			</select>
 			Knocked Down</h2>
-		</div>
+		</div></abbr>
 
 	</div>
 </div>
@@ -2796,7 +2985,7 @@
 	<h1>Movement Trauma</h1>
 	<div class="sheet-cols2">
 
-		<input type="hidden" class="sheet-locked" name="attr_BindingTrauma" value="2" />
+		<abbr title="Tied Up Creatures cannot move and are not moved by involuntary movement. Other creatures (with hands or other prehensile limbs) can Untie (Standard Action) Tied Up creatures, but the Tied Up creature itself cannot. A successful roll (Survival vs 3dHobbled) eliminates the Condition, if the Effect Die equals or exceeds the Condition die (otherwise, a successful roll steps it down)."><input type="hidden" class="sheet-locked" name="attr_BindingTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
 			<input type="hidden" class="sheet-locked" name="attr_BindingTrauma" value="2" />
@@ -2818,12 +3007,11 @@
 				<option value="14">Tied Down</option>
 			</select>
 			Tied Up</h2>
-		</div>
+		</div></abbr>
 
-		<input type="hidden" class="sheet-locked" name="attr_NatureTrauma" value="2" />
+		<abbr title="Immobilized Creatures cannot use Movement Actions (even to run away). The Mobilize Standard Action (Athletics vs 4dImmobilized) eliminates Immobilize Trauma, if the Effect Die exceeds the Immobilize Trauma and the mobilizing creature spends a Plot Point. Otherwise, it steps down the Immobilize Trauma."><input type="hidden" class="sheet-locked" name="attr_NatureTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
-			<input type="hidden" class="sheet-locked" name="attr_NatureTrauma" value="2" />
 			<span>
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="top" width="25" height="25" alt="d4" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="top" width="25" height="25" alt="d6" />
@@ -2833,7 +3021,7 @@
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d14-280x280.png" align="top" width="25" height="25" alt="stressed" />
 			</span>
 			<select name="attr_NatureTrauma">
-				<option value="2">still barely mobile</option>
+				<option value="2">still mobile</option>
 				<option value="4">d4</option>
 				<option value="6">d6</option>
 				<option value="8">d8</option>
@@ -2842,12 +3030,12 @@
 				<option value="14">Immobile</option>
 			</select>
 			Immobilized</h2>
-		</div>
+		</div></abbr>
 
 		<input type="hidden" class="sheet-locked" name="attr_RestraintTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
-			<input type="hidden" class="sheet-locked" name="attr_RestraintTrauma" value="2" />
+				<abbr title="Restrained Creatures cannot be moved (even by involuntary movement, like slide, pull or push). Restrained Creatures can also Escape (a Movement Action which tests Acrobatics vs Reflex or Athletics vs Fortitude), but this only steps down the Restrained Trauma unless the effect die equals or exceeds the remaining Restrained Trauma (and the Restrained Creature spends a Plot Point)."><input type="hidden" class="sheet-locked" name="attr_RestraintTrauma" value="2" />
 			<span>
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="top" width="25" height="25" alt="d4" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="top" width="25" height="25" alt="d6" />
@@ -2871,7 +3059,7 @@
 		<input type="hidden" class="sheet-locked" name="attr_ThunderTrauma" value="2" />
 		<div class="sheet-trauma">
 			<h2>
-			<input type="hidden" class="sheet-locked" name="attr_ThunderTrauma" value="2" />
+				<abbr title="A Prone creature is flat on its belly. Prone Trauma is one of the few Trauma that allow Standard Actions and attack actions (but only Crossbow and spell attacks). Crossbow Assets step up by one for Knocked Down Creatures and by two steps for Prone Creatures. All ranged, blast and burst attacks versus Prone Creatures have the Prone Trauma Die added to the target's defense (and do not add the Prone die to the attack). A Prone or Knocked Down Creature can take a move action and remove one step of Trauma (first) or Stress (once all Prone Trauma is gone) for each movement point spent. But they cannot actually move until all Knocked Down Stress is gone. They can never shift."><input type="hidden" class="sheet-locked" name="attr_ThunderTrauma" value="2" />
 			<span>
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d4-280x280.png" align="top" width="25" height="25" alt="d4" />
 				<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Tales-of-Xadia-Playtest/assets/d6-280x280.png" align="top" width="25" height="25" alt="d6" />
@@ -2890,7 +3078,7 @@
 				<option value="14">Flat on Face</option>
 			</select>
 			Prone</h2>
-		</div>
+		</div></abbr>
 	</div>
 </div>
 
@@ -3199,6 +3387,256 @@
 	</div>
 	{{/rollTotal() Daily 10}}
 <!-- End Daily -->
+
+<!-- Size -->
+{{#rollTotal() Size 4}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d4-blank-280x280{{#rollWasFumble() Size4}}-hitch{{/rollWasFumble() Size4}}.png);">
+{{Size4}}
+</div>
+<div class="sheet-rolltemplate-name">
+Size <br />
+<span style="font-size: 0.75em; color: #b6b473">d6</span><span style="font-size: 0.75em;"> &bull; Size</span>
+</div>
+{{/rollTotal() Size 4}}
+{{#rollTotal() Size 6}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Size6}}-hitch{{/rollWasFumble() Size6}}.png);">
+{{Size6}}
+</div>
+<div class="sheet-rolltemplate-name">
+Size <br />
+<span style="font-size: 0.75em; color: #b6b473">d6</span><span style="font-size: 0.75em;"> &bull; Size</span>
+</div>
+{{/rollTotal() Size 6}}
+{{#rollTotal() Size 8}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Size8}}-hitch{{/rollWasFumble() Size8}}.png);">
+{{Size8}}
+</div>
+<div class="sheet-rolltemplate-name">
+Size <br />
+<span style="font-size: 0.75em; color: #b6b473">d8</span><span style="font-size: 0.75em;"> &bull; Size</span>
+</div>
+{{/rollTotal() Size 8}}
+{{#rollTotal() Size 10}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Size10}}-hitch{{/rollWasFumble() Size10}}.png);">
+{{Size10}}
+</div>
+<div class="sheet-rolltemplate-name">
+Size <br />
+<span style="font-size: 0.75em; color: #b6b473">d10</span><span style="font-size: 0.75em;"> &bull; Size</span>
+</div>
+{{/rollTotal() Size 10}}
+{{#rollTotal() Size 12}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Size12}}-hitch{{/rollWasFumble() Size12}}.png);">
+{{Size12}}
+</div>
+<div class="sheet-rolltemplate-name">
+Size <br />
+<span style="font-size: 0.75em; color: #b6b473">d12</span><span style="font-size: 0.75em;"> &bull; Size</span>
+</div>
+{{/rollTotal() Size 12}}
+
+
+<!-- Armor -->
+{{#rollTotal() Armor 6}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Armor6}}-hitch{{/rollWasFumble() Armor6}}.png);">
+{{Armor6}}
+</div>
+<div class="sheet-rolltemplate-name">
+Armor <br />
+<span style="font-size: 0.75em; color: #b6b473">d6</span><span style="font-size: 0.75em;"> &bull; Armor</span>
+</div>
+{{/rollTotal() Armor 6}}
+{{#rollTotal() Armor 8}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Armor8}}-hitch{{/rollWasFumble() Armor8}}.png);">
+{{Armor8}}
+</div>
+<div class="sheet-rolltemplate-name">
+Armor <br />
+<span style="font-size: 0.75em; color: #b6b473">d8</span><span style="font-size: 0.75em;"> &bull; Armor</span>
+</div>
+{{/rollTotal() Armor 8}}
+{{#rollTotal() Armor 10}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Armor10}}-hitch{{/rollWasFumble() Armor10}}.png);">
+{{Armor10}}
+</div>
+<div class="sheet-rolltemplate-name">
+Armor <br />
+<span style="font-size: 0.75em; color: #b6b473">d10</span><span style="font-size: 0.75em;"> &bull; Armor</span>
+</div>
+{{/rollTotal() Armor 10}}
+{{#rollTotal() Armor 12}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Armor12}}-hitch{{/rollWasFumble() Armor12}}.png);">
+{{Armor12}}
+</div>
+<div class="sheet-rolltemplate-name">
+Armor <br />
+<span style="font-size: 0.75em; color: #b6b473">d12</span><span style="font-size: 0.75em;"> &bull; Armor</span>
+</div>
+{{/rollTotal() Armor 12}}
+
+
+<!-- MagicArmor -->
+{{#rollTotal() MagicArmor 6}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() MagicArmor6}}-hitch{{/rollWasFumble() MagicArmor6}}.png);">
+{{MagicArmor6}}
+</div>
+<div class="sheet-rolltemplate-name">
+MagicArmor <br />
+<span style="font-size: 0.75em; color: #b6b473">d6</span><span style="font-size: 0.75em;"> &bull; MagicArmor</span>
+</div>
+{{/rollTotal() MagicArmor 6}}
+{{#rollTotal() MagicArmor 8}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() MagicArmor8}}-hitch{{/rollWasFumble() MagicArmor8}}.png);">
+{{MagicArmor8}}
+</div>
+<div class="sheet-rolltemplate-name">
+MagicArmor <br />
+<span style="font-size: 0.75em; color: #b6b473">d8</span><span style="font-size: 0.75em;"> &bull; MagicArmor</span>
+</div>
+{{/rollTotal() MagicArmor 8}}
+{{#rollTotal() MagicArmor 10}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() MagicArmor10}}-hitch{{/rollWasFumble() MagicArmor10}}.png);">
+{{MagicArmor10}}
+</div>
+<div class="sheet-rolltemplate-name">
+MagicArmor <br />
+<span style="font-size: 0.75em; color: #b6b473">d10</span><span style="font-size: 0.75em;"> &bull; MagicArmor</span>
+</div>
+{{/rollTotal() MagicArmor 10}}
+{{#rollTotal() MagicArmor 12}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() MagicArmor12}}-hitch{{/rollWasFumble() MagicArmor12}}.png);">
+{{MagicArmor12}}
+</div>
+<div class="sheet-rolltemplate-name">
+MagicArmor <br />
+<span style="font-size: 0.75em; color: #b6b473">d12</span><span style="font-size: 0.75em;"> &bull; MagicArmor </span>
+</div>
+{{/rollTotal() MagicArmor 12}}
+
+<!-- Race -->
+{{#rollTotal() Race 6}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Race6}}-hitch{{/rollWasFumble() Race6}}.png);">
+{{Race6}}
+</div>
+<div class="sheet-rolltemplate-name">
+Race <br />
+<span style="font-size: 0.75em; color: #b6b473">d6</span><span style="font-size: 0.75em;"> &bull; Race</span>
+</div>
+{{/rollTotal() Race 6}}
+{{#rollTotal() Race 8}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Race8}}-hitch{{/rollWasFumble() Race8}}.png);">
+{{Race8}}
+</div>
+<div class="sheet-rolltemplate-name">
+Race <br />
+<span style="font-size: 0.75em; color: #b6b473">d8</span><span style="font-size: 0.75em;"> &bull; Race</span>
+</div>
+{{/rollTotal() Race 8}}
+{{#rollTotal() Race 10}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Race10}}-hitch{{/rollWasFumble() Race10}}.png);">
+{{Race10}}
+</div>
+<div class="sheet-rolltemplate-name">
+Race <br />
+<span style="font-size: 0.75em; color: #b6b473">d10</span><span style="font-size: 0.75em;"> &bull; Race</span>
+</div>
+{{/rollTotal() Race 10}}
+{{#rollTotal() Race 12}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Race12}}-hitch{{/rollWasFumble() Race12}}.png);">
+{{Race12}}
+</div>
+<div class="sheet-rolltemplate-name">
+Race <br />
+<span style="font-size: 0.75em; color: #b6b473">d12</span><span style="font-size: 0.75em;"> &bull; Race</span>
+</div>
+{{/rollTotal() Race 12}}
+
+
+<!-- Neck -->
+{{#rollTotal() Neck 6}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Neck6}}-hitch{{/rollWasFumble() Neck6}}.png);">
+{{Neck6}}
+</div>
+<div class="sheet-rolltemplate-name">
+Neck <br />
+<span style="font-size: 0.75em; color: #b6b473">d6</span><span style="font-size: 0.75em;"> &bull; Neck</span>
+</div>
+{{/rollTotal() Neck 6}}
+{{#rollTotal() Neck 8}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Neck8}}-hitch{{/rollWasFumble() Neck8}}.png);">
+{{Neck8}}
+</div>
+<div class="sheet-rolltemplate-name">
+Neck <br />
+<span style="font-size: 0.75em; color: #b6b473">d8</span><span style="font-size: 0.75em;"> &bull; Neck</span>
+</div>
+{{/rollTotal() Neck 8}}
+{{#rollTotal() Neck 10}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Neck10}}-hitch{{/rollWasFumble() Neck10}}.png);">
+{{Neck10}}
+</div>
+<div class="sheet-rolltemplate-name">
+Neck <br />
+<span style="font-size: 0.75em; color: #b6b473">d10</span><span style="font-size: 0.75em;"> &bull; Neck</span>
+</div>
+{{/rollTotal() Neck 10}}
+{{#rollTotal() Neck 12}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Neck12}}-hitch{{/rollWasFumble() Neck12}}.png);">
+{{Neck12}}
+</div>
+<div class="sheet-rolltemplate-name">
+Neck <br />
+<span style="font-size: 0.75em; color: #b6b473">d12</span><span style="font-size: 0.75em;"> &bull; Neck</span>
+</div>
+{{/rollTotal() Neck 12}}
+
+<!-- ArmorAdjustment -->
+{{#rollTotal() ArmorAdjustment 4}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d4-blank-280x280{{#rollWasFumble() ArmorAdjustment4}}-hitch{{/rollWasFumble() ArmorAdjustment4}}.png);">
+{{ArmorAdjustment4}}
+</div>
+<div class="sheet-rolltemplate-name">
+ArmorAdjustment <br />
+<span style="font-size: 0.75em; color: #b6b473">d4</span><span style="font-size: 0.75em;"> &bull; ArmorAdjustment</span>
+</div>
+{{/rollTotal() ArmorAdjustment 4}}
+{{#rollTotal() ArmorAdjustment 6}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() ArmorAdjustment6}}-hitch{{/rollWasFumble() ArmorAdjustment6}}.png);">
+{{ArmorAdjustment6}}
+</div>
+<div class="sheet-rolltemplate-name">
+ArmorAdjustment <br />
+<span style="font-size: 0.75em; color: #b6b473">d6</span><span style="font-size: 0.75em;"> &bull; ArmorAdjustment</span>
+</div>
+{{/rollTotal() ArmorAdjustment 6}}
+{{#rollTotal() ArmorAdjustment 8}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() ArmorAdjustment8}}-hitch{{/rollWasFumble() ArmorAdjustment8}}.png);">
+{{ArmorAdjustment8}}
+</div>
+<div class="sheet-rolltemplate-name">
+ArmorAdjustment <br />
+<span style="font-size: 0.75em; color: #b6b473">d8</span><span style="font-size: 0.75em;"> &bull; ArmorAdjustment</span>
+</div>
+{{/rollTotal() ArmorAdjustment 8}}
+{{#rollTotal() ArmorAdjustment 10}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() ArmorAdjustment10}}-hitch{{/rollWasFumble() ArmorAdjustment10}}.png);">
+{{ArmorAdjustment10}}
+</div>
+<div class="sheet-rolltemplate-name">
+ArmorAdjustment <br />
+<span style="font-size: 0.75em; color: #b6b473">d10</span><span style="font-size: 0.75em;"> &bull; ArmorAdjustment</span>
+</div>
+{{/rollTotal() ArmorAdjustment 10}}
+{{#rollTotal() ArmorAdjustment 12}}
+<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() ArmorAdjustment12}}-hitch{{/rollWasFumble() ArmorAdjustment12}}.png);">
+{{ArmorAdjustment12}}
+</div>
+<div class="sheet-rolltemplate-name">
+ArmorAdjustment <br />
+<span style="font-size: 0.75em; color: #b6b473">d12</span><span style="font-size: 0.75em;"> &bull; ArmorAdjustment</span>
+</div>
+{{/rollTotal() ArmorAdjustment 12}} 
+
 <!-- Help -->
 </div>
 
@@ -3391,10 +3829,152 @@
 	{{Daily10}}
 	</div>
 	{{/rollTotal() Daily 10}}
+	<!-- Size -->
+	{{#rollTotal() Size 4}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d4-blank-280x280{{#rollWasFumble() Size4}}-hitch{{/rollWasFumble() Size4}}.png);">
+	{{Size6}}
+	</div>
+	{{/rollTotal() Size 4}}
+	{{#rollTotal() Size 6}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Size6}}-hitch{{/rollWasFumble() Size6}}.png);">
+	{{Size6}}
+	</div>
+	{{/rollTotal() Size 6}}
+	{{#rollTotal() Size 8}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Size8}}-hitch{{/rollWasFumble() Size8}}.png);">
+	{{Size8}}
+	</div>
+	{{/rollTotal() Size 8}}
+	{{#rollTotal() Size 10}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Size10}}-hitch{{/rollWasFumble() Size10}}.png);">
+	{{Size10}}
+	</div>
+	{{/rollTotal() Size 10}}
+	{{#rollTotal() Size 12}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Size12}}-hitch{{/rollWasFumble() Size12}}.png);">
+	{{Size12}}
+	</div>
+	{{/rollTotal() Size 12}}
+
+	<!-- Armor -->
+	{{#rollTotal() Armor 6}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Armor6}}-hitch{{/rollWasFumble() Armor6}}.png);">
+	{{Armor6}}
+	</div>
+	{{/rollTotal() Armor 6}}
+	{{#rollTotal() Armor 8}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Armor8}}-hitch{{/rollWasFumble() Armor8}}.png);">
+	{{Armor8}}
+	</div>
+	{{/rollTotal() Armor 8}}
+	{{#rollTotal() Armor 10}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Armor10}}-hitch{{/rollWasFumble() Armor10}}.png);">
+	{{Armor10}}
+	</div>
+	{{/rollTotal() Armor 10}}
+	{{#rollTotal() Armor 12}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Armor12}}-hitch{{/rollWasFumble() Armor12}}.png);">
+	{{Armor12}}
+	</div>
+	{{/rollTotal() Armor 12}}
+
+	<!-- MagicArmor -->
+	{{#rollTotal() MagicArmor 6}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() MagicArmor6}}-hitch{{/rollWasFumble() MagicArmor6}}.png);">
+	{{MagicArmor6}}
+	</div>
+	{{/rollTotal() MagicArmor 6}}
+	{{#rollTotal() MagicArmor 8}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() MagicArmor8}}-hitch{{/rollWasFumble() MagicArmor8}}.png);">
+	{{MagicArmor8}}
+	</div>
+	{{/rollTotal() MagicArmor 8}}
+	{{#rollTotal() MagicArmor 10}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() MagicArmor10}}-hitch{{/rollWasFumble() MagicArmor10}}.png);">
+	{{MagicArmor10}}
+	</div>
+	{{/rollTotal() MagicArmor 10}}
+	{{#rollTotal() MagicArmor 12}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() MagicArmor12}}-hitch{{/rollWasFumble() MagicArmor12}}.png);">
+	{{MagicArmor12}}
+	</div>
+	{{/rollTotal() MagicArmor 12}}
+
+
+	<!-- Race -->
+	{{#rollTotal() Race 6}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Race6}}-hitch{{/rollWasFumble() Race6}}.png);">
+	{{Race6}}
+	</div>
+	{{/rollTotal() Race 6}}
+	{{#rollTotal() Race 8}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Race8}}-hitch{{/rollWasFumble() Race8}}.png);">
+	{{Race8}}
+	</div>
+	{{/rollTotal() Race 8}}
+	{{#rollTotal() Race 10}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Race10}}-hitch{{/rollWasFumble() Race10}}.png);">
+	{{Race10}}
+	</div>
+	{{/rollTotal() Race 10}}
+	{{#rollTotal() Race 12}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Race12}}-hitch{{/rollWasFumble() Race12}}.png);">
+	{{Race12}}
+	</div>
+	{{/rollTotal() Race 12}}
+
+	<!-- Neck -->
+	{{#rollTotal() Neck 6}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() Neck6}}-hitch{{/rollWasFumble() Neck6}}.png);">
+	{{Neck6}}
+	</div>
+	{{/rollTotal() Neck 6}}
+	{{#rollTotal() Neck 8}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() Neck8}}-hitch{{/rollWasFumble() Neck8}}.png);">
+	{{Neck8}}
+	</div>
+	{{/rollTotal() Neck 8}}
+	{{#rollTotal() Neck 10}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() Neck10}}-hitch{{/rollWasFumble() Neck10}}.png);">
+	{{Neck10}}
+	</div>
+	{{/rollTotal() Neck 10}}
+	{{#rollTotal() Neck 12}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() Neck12}}-hitch{{/rollWasFumble() Neck12}}.png);">
+	{{Neck12}}
+	</div>
+	{{/rollTotal() Neck 12}}
+
+	<!-- ArmorAdjustment -->
+	{{#rollTotal() ArmorAdjustment 4}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d4-blank-280x280{{#rollWasFumble() ArmorAdjustment4}}-hitch{{/rollWasFumble() ArmorAdjustment4}}.png);">
+	{{ArmorAdjustment4}}
+	</div>
+	{{/rollTotal() ArmorAdjustment 4}}
+	{{#rollTotal() ArmorAdjustment 6}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d6-blank-280x280{{#rollWasFumble() ArmorAdjustment6}}-hitch{{/rollWasFumble() ArmorAdjustment6}}.png);">
+	{{ArmorAdjustment6}}
+	</div>
+	{{/rollTotal() ArmorAdjustment 6}}
+	{{#rollTotal() ArmorAdjustment 8}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d8-blank-280x280{{#rollWasFumble() ArmorAdjustment8}}-hitch{{/rollWasFumble() ArmorAdjustment8}}.png);">
+	{{ArmorAdjustment8}}
+	</div>
+	{{/rollTotal() ArmorAdjustment 8}}
+	{{#rollTotal() ArmorAdjustment 10}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d10-blank-280x280{{#rollWasFumble() ArmorAdjustment10}}-hitch{{/rollWasFumble() ArmorAdjustment10}}.png);">
+	{{ArmorAdjustment10}}
+	</div>
+	{{/rollTotal() ArmorAdjustment 10}}
+	{{#rollTotal() ArmorAdjustment 12}}
+	<div class="sheet-rolltemplate-result" style="background-image: url(https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/CortexPrime-Hammerheads/assets/d12-blank-280x280{{#rollWasFumble() ArmorAdjustment12}}-hitch{{/rollWasFumble() ArmorAdjustment12}}.png);">
+	{{ArmorAdjustment12}}
+	</div>
+	{{/rollTotal() ArmorAdjustment 12}}
 </div>
 </rolltemplate>
 
-
+<script type="text/worker">
 
 on("sheet:opened change:character_name change:character_avatar change:character_token", function() {
     getAttrs(["character_name","character_avatar","character_token"], function(v) {
